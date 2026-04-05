@@ -3,225 +3,621 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>マイクロビジネス速報 — 2026年4月2日</title>
-  <meta name="description" content="世界中のマイクロビジネス・スモールビジネス最新ニュースを日本語で毎日お届け。ソロプレナー・副業・EC・クリエイターエコノミー・フリーランス情報。">
-  <meta property="og:title" content="マイクロビジネス速報 — 2026年4月2日">
-  <meta property="og:description" content="世界中のマイクロビジネス最新ニュースを毎日自動収集・翻訳してお届けします。">
-  <meta property="og:url" content="https://muuuuum.github.io/micro-news/">
+  <title>Micro Biz Daily — マイクロビジネスの最新トレンド</title>
+  <meta name="description" content="マイクロビジネスの最新トレンドを毎朝日本語でお届け。個人開発・フリーランス・副業・EC・D2Cの最新動向を解説。">
+  <meta property="og:title" content="Micro Biz Daily — マイクロビジネスの最新トレンド">
+  <meta property="og:description" content="マイクロビジネスの最新トレンドを毎朝日本語でお届け">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;900&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <style>
-    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    body{font-family:'Noto Sans JP','Inter',sans-serif;background:#f5f5f5;color:#1a1a1a;line-height:1.7}
-    a{color:#1a56db;text-decoration:none}a:hover{text-decoration:underline}
-    .top-bar{background:#fff;border-bottom:3px solid #f59e0b;padding:12px 24px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100}
-    .top-bar .logo{font-size:1.4rem;font-weight:700}.top-bar .date-time{font-size:.85rem;color:#666}
-    .breaking-ticker{background:#f59e0b;color:#1a1a1a;display:flex;align-items:center;overflow:hidden;height:36px}
-    .breaking-label{background:#fff;color:#f59e0b;font-weight:700;font-size:.75rem;padding:4px 12px;white-space:nowrap;flex-shrink:0}
-    .ticker-content{display:flex;animation:ticker 45s linear infinite;white-space:nowrap;padding-left:16px;font-size:.85rem}
+    :root{--bg:#f5f6f8;--white:#fff;--border:#e5e7eb;--border-light:#f0f1f3;--text:#111827;--text2:#374151;--text3:#4b5563;--muted:#6b7280;--muted2:#9ca3af;--muted3:#d1d5db;--accent:#0d9488;--accent-hover:#0f766e;--accent-light:#f0fdfa;--blue:#2563eb;--blue-light:#eff6ff;--green:#059669;--green-light:#ecfdf5;--purple:#7c3aed;--purple-light:#f5f3ff;--orange:#d97706;--orange-light:#fffbeb;--teal:#0d9488;--teal-light:#f0fdfa;--pink:#db2777;--pink-light:#fdf2f8;}
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{font-family:'Noto Sans JP','Inter',-apple-system,BlinkMacSystemFont,sans-serif;background:var(--bg);color:var(--text);line-height:1.8;-webkit-font-smoothing:antialiased;}
+    a{color:inherit;text-decoration:none;}
+    .ticker{background:var(--accent);overflow:hidden;padding:6px 0;}
+    .ticker-inner{display:flex;align-items:center;white-space:nowrap;animation:ticker 45s linear infinite;width:max-content;}
     @keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
-    .category-nav{background:#fff;border-bottom:1px solid #e0e0e0;display:flex;gap:0;overflow-x:auto;padding:0 16px}
-    .category-nav a{padding:10px 16px;font-size:.85rem;font-weight:500;color:#666;white-space:nowrap;border-bottom:2px solid transparent;transition:all .2s}
-    .category-nav a:hover,.category-nav a.active{color:#d97706;border-bottom-color:#d97706;text-decoration:none}
-    .hero-section{display:grid;grid-template-columns:1.5fr 1fr;gap:16px;margin:20px auto;max-width:1100px;padding:0 16px}
-    .hero-main{background:#fff;border-radius:8px;padding:28px;box-shadow:0 2px 8px rgba(0,0,0,.08)}
-    .hero-main h1{font-size:1.5rem;font-weight:700;line-height:1.5;margin:10px 0 14px}
-    .hero-main .hero-summary{color:#444;font-size:.95rem;line-height:1.8}
-    .hero-sub{display:flex;flex-direction:column;gap:16px}
-    .sub-news-card{background:#fff;border-radius:8px;padding:20px;box-shadow:0 2px 8px rgba(0,0,0,.08);flex:1}
-    .sub-news-card h2{font-size:1rem;font-weight:700;line-height:1.5;margin:8px 0}.sub-news-card p{font-size:.85rem;color:#555;line-height:1.7}
-    .tag{display:inline-block;padding:2px 10px;border-radius:4px;font-size:.7rem;font-weight:700;color:#fff}
-    .tag-solo{background:#7c3aed}.tag-ec{background:#059669}.tag-ai{background:#2563eb}.tag-fund{background:#dc2626}.tag-policy{background:#6b7280}.tag-global{background:#0891b2}
-    .meta{font-size:.8rem;color:#999;margin-top:10px}
-    .stats-bar{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:20px auto;max-width:1100px;padding:0 16px}
-    .stat-card{background:#fff;border-radius:8px;padding:16px 20px;text-align:center;box-shadow:0 2px 8px rgba(0,0,0,.08)}
-    .stat-number{font-size:1.6rem;font-weight:700;color:#d97706}.stat-label{font-size:.75rem;color:#666;margin-top:4px}
-    .section-block{max-width:1100px;margin:24px auto;padding:0 16px}
-    .section-title{font-size:1.15rem;font-weight:700;margin-bottom:14px;display:flex;align-items:center;gap:10px}
-    .accent-bar{width:4px;height:22px;background:#f59e0b;border-radius:2px;display:inline-block}
-    .card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px}
-    .news-card{background:#fff;border-radius:8px;padding:20px;box-shadow:0 2px 8px rgba(0,0,0,.08);transition:transform .15s,box-shadow .15s}
-    .news-card:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(0,0,0,.12)}
-    .news-card h3{font-size:.95rem;font-weight:700;line-height:1.5;margin:8px 0 6px}.news-card p{font-size:.85rem;color:#555;line-height:1.7}
-    .card-footer{display:flex;justify-content:space-between;align-items:center;margin-top:12px;font-size:.75rem}
-    .card-footer .source{color:#999}.card-footer a{color:#1a56db;font-weight:600}
-    .news-index{max-width:1100px;margin:30px auto;padding:0 16px}
-    .news-index h2{font-size:1.1rem;font-weight:700;margin-bottom:12px;display:flex;align-items:center;gap:10px}
-    .news-index ol{background:#fff;border-radius:8px;padding:20px 20px 20px 44px;box-shadow:0 2px 8px rgba(0,0,0,.08)}
-    .news-index li{padding:6px 0;font-size:.88rem;border-bottom:1px solid #f0f0f0}.news-index li:last-child{border-bottom:none}
-    .sources-section{max-width:1100px;margin:30px auto;padding:0 16px}
-    .sources-section h2{font-size:1.1rem;font-weight:700;margin-bottom:12px}
-    .sources-section ul{background:#fff;border-radius:8px;padding:20px;box-shadow:0 2px 8px rgba(0,0,0,.08);list-style:none;display:flex;flex-wrap:wrap;gap:8px 20px}
-    .sources-section li{font-size:.8rem;color:#666}.sources-section li a{color:#1a56db}
-    footer{background:#1a1a1a;color:#999;text-align:center;padding:24px 16px;margin-top:40px;font-size:.8rem;line-height:1.8}
-    footer strong{color:#fff}
-    @media(max-width:768px){.hero-section{grid-template-columns:1fr}.stats-bar{grid-template-columns:repeat(2,1fr)}.card-grid{grid-template-columns:1fr}.hero-main h1{font-size:1.2rem}.top-bar{flex-direction:column;gap:4px;text-align:center}}
+    .ticker-badge{background:#fff;color:var(--accent);font-size:10px;font-weight:800;padding:2px 8px;border-radius:2px;margin:0 18px;flex-shrink:0;letter-spacing:.1em;}
+    .ticker-text{font-size:12.5px;color:#fff;padding-right:50px;font-weight:500;}
+    .header{background:var(--white);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100;}
+    .header-inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:56px;}
+    .logo{display:flex;align-items:center;gap:8px;}
+    .logo-icon{background:var(--accent);color:#fff;font-size:11px;font-weight:900;width:32px;height:32px;display:flex;align-items:center;justify-content:center;border-radius:6px;letter-spacing:-.5px;}
+    .logo-text{font-size:20px;font-weight:900;letter-spacing:-.5px;}
+    .logo-text em{font-style:normal;color:var(--accent);}
+    .header-actions{display:flex;align-items:center;gap:16px;}
+    .search-box{display:flex;align-items:center;gap:6px;background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:6px 12px;font-size:13px;color:var(--muted);cursor:pointer;transition:border-color .15s;}
+    .search-box:hover{border-color:var(--muted2);}
+    .header-date{font-size:12px;color:var(--muted);font-weight:500;}
+    .nav{background:var(--white);border-bottom:1px solid var(--border);}
+    .nav-inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;gap:0;overflow-x:auto;-webkit-overflow-scrolling:touch;}
+    .nav-inner::-webkit-scrollbar{display:none;}
+    .nav-item{padding:11px 16px;font-size:13px;font-weight:700;color:var(--text3);cursor:pointer;border-bottom:2px solid transparent;transition:all .15s;white-space:nowrap;}
+    .nav-item:hover{color:var(--accent);}
+    .nav-item.active{color:var(--accent);border-bottom-color:var(--accent);}
+    .page{max-width:1200px;margin:0 auto;padding:24px 24px 60px;}
+    .layout{display:grid;grid-template-columns:1fr 320px;gap:32px;}
+    .sec{margin-bottom:32px;}
+    .sec-header{display:flex;align-items:center;gap:10px;margin-bottom:16px;padding-bottom:12px;border-bottom:1px solid var(--border);}
+    .sec-bar{width:3px;height:18px;background:var(--accent);border-radius:2px;flex-shrink:0;}
+    .sec-title{font-size:15px;font-weight:800;}
+    .sec-more{margin-left:auto;font-size:12px;color:var(--muted);font-weight:600;cursor:pointer;transition:color .15s;}
+    .sec-more:hover{color:var(--accent);}
+    .src-link{display:inline-flex;align-items:center;gap:3px;font-size:11px;color:var(--blue);font-weight:500;background:var(--blue-light);padding:2px 8px;border-radius:4px;text-decoration:none;transition:all .15s;border:1px solid transparent;}
+    .src-link:hover{border-color:var(--blue);background:#dbeafe;}
+    .hero{display:grid;grid-template-columns:1fr 1fr;gap:0;background:var(--white);border-radius:10px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.05);margin-bottom:32px;cursor:pointer;transition:box-shadow .2s;}
+    .hero:hover{box-shadow:0 4px 20px rgba(0,0,0,.1);}
+    .hero-visual{position:relative;min-height:340px;overflow:hidden;}
+    .hero-visual svg{width:100%;height:100%;display:block;}
+    .hero-content{padding:32px;display:flex;flex-direction:column;justify-content:center;}
+    .hero-tag{display:inline-flex;font-size:11px;font-weight:700;padding:3px 10px;border-radius:3px;width:fit-content;margin-bottom:10px;letter-spacing:.05em;}
+    .hero-title{font-size:22px;font-weight:800;line-height:1.5;margin-bottom:10px;}
+    .hero-desc{font-size:14px;color:var(--text3);line-height:1.8;margin-bottom:14px;}
+    .hero-desc strong{color:var(--text);font-weight:700;}
+    .hero-meta{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--muted);flex-wrap:wrap;}
+    .hero-meta-dot{width:3px;height:3px;border-radius:50%;background:var(--muted2);}
+    .hero-stats{display:flex;gap:16px;margin-top:14px;padding-top:14px;border-top:1px solid var(--border);}
+    .hero-stat{text-align:center;flex:1;}
+    .hero-stat-val{font-size:20px;font-weight:900;letter-spacing:-.5px;}
+    .hero-stat-label{font-size:10px;color:var(--muted);font-weight:500;margin-top:2px;}
+    .pickup-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:32px;}
+    .pickup-card{background:var(--white);border-radius:8px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.04);transition:all .2s;cursor:pointer;}
+    .pickup-card:hover{box-shadow:0 4px 16px rgba(0,0,0,.1);transform:translateY(-2px);}
+    .pickup-thumb{height:120px;position:relative;overflow:hidden;}
+    .pickup-thumb svg{width:100%;height:100%;display:block;}
+    .pickup-body{padding:12px 14px;}
+    .pickup-tag{font-size:10px;font-weight:700;padding:1px 6px;border-radius:2px;display:inline-block;margin-bottom:6px;letter-spacing:.04em;}
+    .pickup-title{font-size:13px;font-weight:700;line-height:1.55;}
+    .pickup-meta{display:flex;align-items:center;gap:6px;margin-top:6px;font-size:10.5px;color:var(--muted2);flex-wrap:wrap;}
+    .card-list{display:flex;flex-direction:column;gap:16px;}
+    .card-h{display:grid;grid-template-columns:220px 1fr;gap:0;background:var(--white);border-radius:8px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.04);transition:all .2s;cursor:pointer;}
+    .card-h:hover{box-shadow:0 4px 16px rgba(0,0,0,.1);transform:translateY(-1px);}
+    .card-h-thumb{position:relative;overflow:hidden;min-height:140px;}
+    .card-h-thumb svg{width:100%;height:100%;display:block;}
+    .card-h-body{padding:16px 20px;display:flex;flex-direction:column;justify-content:center;}
+    .card-h-tag{font-size:10px;font-weight:700;padding:2px 8px;border-radius:3px;display:inline-block;width:fit-content;margin-bottom:6px;letter-spacing:.04em;}
+    .card-h-title{font-size:15px;font-weight:700;line-height:1.55;margin-bottom:6px;}
+    .card-h-desc{font-size:12.5px;color:var(--muted);line-height:1.7;}
+    .card-h-desc strong{color:var(--text2);font-weight:600;}
+    .card-h-meta{display:flex;align-items:center;gap:8px;margin-top:8px;font-size:11px;color:var(--muted2);flex-wrap:wrap;}
+    .card-h-meta-dot{width:3px;height:3px;border-radius:50%;background:var(--muted3);}
+    .card-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+    .card-v{background:var(--white);border-radius:8px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.04);transition:all .2s;cursor:pointer;}
+    .card-v:hover{box-shadow:0 4px 16px rgba(0,0,0,.1);transform:translateY(-2px);}
+    .card-v-thumb{height:150px;position:relative;overflow:hidden;}
+    .card-v-thumb svg{width:100%;height:100%;display:block;}
+    .card-v-body{padding:14px 16px;}
+    .card-v-tag{font-size:10px;font-weight:700;padding:2px 8px;border-radius:3px;display:inline-block;width:fit-content;margin-bottom:6px;letter-spacing:.04em;}
+    .card-v-title{font-size:14px;font-weight:700;line-height:1.5;margin-bottom:6px;}
+    .card-v-desc{font-size:12px;color:var(--muted);line-height:1.7;}
+    .card-v-desc strong{color:var(--text2);font-weight:600;}
+    .card-v-footer{display:flex;justify-content:space-between;align-items:center;padding:10px 16px;border-top:1px solid var(--border-light);font-size:11px;color:var(--muted2);}
+    .tag-indie{background:var(--purple-light);color:var(--purple);}
+    .tag-freelance{background:var(--blue-light);color:var(--blue);}
+    .tag-ec{background:var(--green-light);color:var(--green);}
+    .tag-side{background:var(--orange-light);color:var(--orange);}
+    .tag-marketing{background:var(--pink-light);color:var(--pink);}
+    .tag-funding{background:var(--accent-light);color:var(--accent);}
+    .table-box{background:var(--white);border-radius:8px;padding:20px;box-shadow:0 1px 3px rgba(0,0,0,.04);margin-bottom:16px;}
+    .table-box-title{font-size:14px;font-weight:700;margin-bottom:4px;}
+    .table-box-sub{font-size:12.5px;color:var(--muted);margin-bottom:16px;}
+    .dtable{width:100%;border-collapse:collapse;font-size:13px;}
+    .dtable th{background:#f8f9fb;color:var(--text2);padding:10px 14px;text-align:left;font-weight:600;font-size:11.5px;border-bottom:2px solid var(--border);}
+    .dtable td{padding:11px 14px;border-bottom:1px solid var(--border-light);}
+    .dtable tbody tr:hover{background:#fafbfc;}
+    .dtable .mn{font-weight:700;color:var(--text);}
+    .bar-cell{display:flex;align-items:center;gap:8px;}
+    .bar-bg{flex:1;height:6px;background:#e5e7eb;border-radius:3px;overflow:hidden;}
+    .bar-fill{height:100%;border-radius:3px;}
+    .bar-val{font-size:12px;font-weight:700;min-width:44px;text-align:right;}
+    .chart-title{font-size:12px;font-weight:700;color:var(--muted);margin-bottom:16px;}
+    .chart-bars{display:flex;align-items:flex-end;gap:12px;height:130px;}
+    .chart-col{flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;height:100%;justify-content:flex-end;}
+    .chart-bar{width:100%;border-radius:4px 4px 0 0;min-height:4px;}
+    .chart-bar-label{font-size:10px;color:var(--muted);text-align:center;line-height:1.2;margin-top:2px;}
+    .chart-bar-val{font-size:11px;font-weight:800;}
+    .diagram{border-radius:8px;overflow:hidden;margin:16px 0;padding:24px;}
+    .diagram-title{font-size:12px;font-weight:700;margin-bottom:14px;}
+    .diagram-caption{font-size:11px;color:var(--muted);margin-top:8px;text-align:center;}
+    .sidebar{display:flex;flex-direction:column;gap:20px;}
+    .sb-box{background:var(--white);border-radius:8px;padding:18px;box-shadow:0 1px 3px rgba(0,0,0,.04);}
+    .sb-title{font-size:13px;font-weight:800;padding-bottom:10px;margin-bottom:12px;border-bottom:2px solid var(--accent);display:flex;align-items:center;gap:6px;}
+    .sb-stats{display:flex;flex-direction:column;}
+    .sb-stat{display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid var(--border-light);}
+    .sb-stat:last-child{border-bottom:none;}
+    .sb-stat-name{font-size:12.5px;color:var(--text3);}
+    .sb-stat-val{font-size:13px;font-weight:800;}
+    .sb-events{display:flex;flex-direction:column;gap:12px;}
+    .sb-event{border-left:3px solid;padding-left:10px;}
+    .sb-event-date{font-size:11px;font-weight:700;}
+    .sb-event-text{font-size:12.5px;color:var(--text2);line-height:1.5;}
+    .sb-newsletter{background:linear-gradient(135deg,#134e4a,#0d9488);border-radius:8px;padding:24px;color:#fff;}
+    .sb-nl-title{font-size:14px;font-weight:800;margin-bottom:6px;}
+    .sb-nl-desc{font-size:12px;color:rgba(255,255,255,.7);line-height:1.6;margin-bottom:14px;}
+    .sb-nl-form{display:flex;gap:6px;}
+    .sb-nl-input{flex:1;padding:8px 12px;border:none;border-radius:6px;font-size:12px;background:rgba(255,255,255,.15);color:#fff;outline:none;}
+    .sb-nl-input::placeholder{color:rgba(255,255,255,.5);}
+    .sb-nl-btn{background:#fff;color:var(--accent);border:none;border-radius:6px;padding:8px 16px;font-size:12px;font-weight:700;cursor:pointer;transition:background .15s;}
+    .sb-nl-btn:hover{background:#f0fdfa;}
+    .sb-nl-note{font-size:10px;color:rgba(255,255,255,.4);margin-top:8px;}
+    .sources{background:var(--white);border-radius:8px;padding:18px;box-shadow:0 1px 3px rgba(0,0,0,.04);margin-top:8px;}
+    .sources-title{font-size:12px;font-weight:700;color:var(--muted);margin-bottom:10px;}
+    .sources-list{display:flex;flex-wrap:wrap;gap:6px;}
+    .source-chip{background:var(--bg);border:1px solid var(--border);font-size:11px;color:var(--text3);padding:3px 10px;border-radius:16px;font-weight:500;transition:all .15s;text-decoration:none;}
+    .source-chip:hover{border-color:var(--blue);color:var(--blue);}
+    .footer{background:var(--text);color:rgba(255,255,255,.5);}
+    .footer-inner{max-width:1200px;margin:0 auto;padding:40px 24px 24px;}
+    .footer-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:28px;}
+    .footer-logo{font-size:20px;font-weight:900;color:#fff;margin-bottom:4px;}
+    .footer-logo em{font-style:normal;color:var(--accent);}
+    .footer-tagline{font-size:12px;color:rgba(255,255,255,.4);}
+    .footer-links{display:flex;gap:32px;}
+    .footer-links-title{font-size:11px;font-weight:700;color:rgba(255,255,255,.6);margin-bottom:8px;letter-spacing:.05em;text-transform:uppercase;}
+    .footer-links-list{list-style:none;display:flex;flex-direction:column;gap:4px;}
+    .footer-links-list li{font-size:12px;color:rgba(255,255,255,.4);cursor:pointer;transition:color .15s;}
+    .footer-links-list li:hover{color:rgba(255,255,255,.7);}
+    .footer-bottom{border-top:1px solid rgba(255,255,255,.08);padding-top:16px;display:flex;justify-content:space-between;align-items:center;font-size:11px;}
+    /* modal */
+    .modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:1000;display:none;align-items:flex-start;justify-content:center;padding:40px 20px;overflow-y:auto;backdrop-filter:blur(2px);}
+    .modal-overlay.active{display:flex;}
+    .modal{background:var(--white);border-radius:12px;max-width:780px;width:100%;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.2);animation:modalIn .25s ease;}
+    @keyframes modalIn{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
+    .modal-hero{position:relative;height:260px;overflow:hidden;}
+    .modal-hero svg{width:100%;height:100%;display:block;}
+    .modal-close{position:absolute;top:16px;right:16px;background:rgba(0,0,0,.5);color:#fff;border:none;border-radius:50%;width:36px;height:36px;font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .15s;z-index:2;}
+    .modal-close:hover{background:rgba(0,0,0,.7);}
+    .modal-body{padding:32px;}
+    .modal-tag{display:inline-flex;font-size:11px;font-weight:700;padding:3px 10px;border-radius:3px;margin-bottom:12px;letter-spacing:.05em;}
+    .modal-title{font-size:24px;font-weight:800;line-height:1.45;margin-bottom:16px;}
+    .modal-meta{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--muted);margin-bottom:20px;flex-wrap:wrap;padding-bottom:16px;border-bottom:1px solid var(--border);}
+    .modal-meta-dot{width:3px;height:3px;border-radius:50%;background:var(--muted2);}
+    .modal-text{font-size:15px;color:var(--text2);line-height:2;margin-bottom:16px;}
+    .modal-text strong{color:var(--text);font-weight:700;}
+    .modal-subhead{font-size:16px;font-weight:800;margin:24px 0 12px;padding-left:12px;border-left:3px solid var(--accent);}
+    .modal-list{list-style:none;padding:0;margin:0 0 16px;}
+    .modal-list li{padding:6px 0 6px 16px;font-size:14px;color:var(--text2);line-height:1.7;position:relative;}
+    .modal-list li::before{content:'';position:absolute;left:0;top:14px;width:6px;height:6px;border-radius:50%;background:var(--accent);}
+    .modal-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border-radius:8px;overflow:hidden;margin:20px 0;}
+    .modal-stat-item{background:var(--bg);padding:16px;text-align:center;}
+    .modal-stat-val{font-size:22px;font-weight:900;letter-spacing:-1px;}
+    .modal-stat-label{font-size:11px;color:var(--muted);margin-top:3px;}
+    .modal-sources{background:var(--bg);border-radius:8px;padding:14px 16px;margin-top:24px;}
+    .modal-sources-title{font-size:12px;font-weight:700;color:var(--muted);margin-bottom:8px;}
+    .modal-sources-list{display:flex;flex-direction:column;gap:4px;}
+    .modal-sources-list a{font-size:13px;color:var(--blue);text-decoration:none;word-break:break-all;transition:color .15s;}
+    .modal-sources-list a:hover{color:var(--accent);text-decoration:underline;}
+    @media(max-width:960px){.layout{grid-template-columns:1fr;}.hero{grid-template-columns:1fr;}.hero-visual{min-height:220px;}.pickup-grid{grid-template-columns:repeat(2,1fr);}.footer-top{flex-direction:column;gap:24px;}}
+    @media(max-width:640px){.page{padding:16px 14px 40px;}.header-inner,.nav-inner{padding:0 14px;}.hero-title{font-size:18px;}.hero-content{padding:20px;}.pickup-grid{grid-template-columns:1fr 1fr;}.card-grid{grid-template-columns:1fr;}.card-h{grid-template-columns:140px 1fr;}.card-h-thumb{min-height:100px;}.modal-body{padding:20px;}.modal-title{font-size:20px;}.modal-stats{grid-template-columns:1fr;}.footer-links{flex-wrap:wrap;gap:20px;}.footer-bottom{flex-direction:column;gap:8px;text-align:center;}.search-box span:last-child{display:none;}}
+    @media(max-width:440px){.pickup-grid{grid-template-columns:1fr;}.hero-stats{flex-direction:column;gap:8px;}}
   </style>
 </head>
 <body>
-<header class="top-bar">
-  <div class="logo">💼 マイクロビジネス速報</div>
-  <div class="date-time">2026年4月2日（水） 更新: 20:50 JST</div>
-</header>
-<div class="breaking-ticker">
-  <span class="breaking-label">注目</span>
-  <div class="ticker-content">
-    <span>Q1 2026 VC投資$300B史上最高・AI関連80% ／ 1人企業がAIで「10人分」の時代に ／ ドロップシッピング市場$350B突破 ／ 米QBI控除20%が恒久化 ／ Y Combinator「$500Kで10億ドル企業が作れる」 ／ ギグエコノミー市場$674B到達 ／ クリエイターエコノミー$2500億超え ／&nbsp;&nbsp;&nbsp;</span>
-    <span>Q1 2026 VC投資$300B史上最高・AI関連80% ／ 1人企業がAIで「10人分」の時代に ／ ドロップシッピング市場$350B突破 ／ 米QBI控除20%が恒久化 ／ Y Combinator「$500Kで10億ドル企業が作れる」 ／ ギグエコノミー市場$674B到達 ／ クリエイターエコノミー$2500億超え ／&nbsp;&nbsp;&nbsp;</span>
+
+<!-- TICKER -->
+<div class="ticker"><div class="ticker-inner">
+  <span class="ticker-badge">TREND</span><span class="ticker-text">米国関税引き上げで輸入中小企業の月次コストが3倍に — ローカルサプライヤーへの転換が急務</span>
+  <span class="ticker-badge">TREND</span><span class="ticker-text">Shopify B2B機能がBasic〜Advancedプランで無料提供開始 — 4月15日にScripts廃止</span>
+  <span class="ticker-badge">TREND</span><span class="ticker-text">AI自動化マイクロエージェンシー — 初期投資$2,000〜5,000で月収$5,000〜50,000を達成</span>
+  <span class="ticker-badge">TREND</span><span class="ticker-text">フリーランサーの77%がAI導入済み — 生産性20〜40%向上・3時間の作業が30分に</span>
+  <span class="ticker-badge">TREND</span><span class="ticker-text">ドロップシッピング市場2026年$4,014億 — 前年比21.3%成長でTikTok Shopが新主流チャネルに</span>
+  <span class="ticker-badge">TREND</span><span class="ticker-text">$20,000助成金の締切5月15日 — QuickBooks・Mailchimp・Venmoの3プログラム同時公募中</span>
+  <span class="ticker-badge">TREND</span><span class="ticker-text">米国関税引き上げで輸入中小企業の月次コストが3倍に — ローカルサプライヤーへの転換が急務</span>
+  <span class="ticker-badge">TREND</span><span class="ticker-text">Shopify B2B機能がBasic〜Advancedプランで無料提供開始 — 4月15日にScripts廃止</span>
+  <span class="ticker-badge">TREND</span><span class="ticker-text">AI自動化マイクロエージェンシー — 初期投資$2,000〜5,000で月収$5,000〜50,000を達成</span>
+  <span class="ticker-badge">TREND</span><span class="ticker-text">フリーランサーの77%がAI導入済み — 生産性20〜40%向上・3時間の作業が30分に</span>
+  <span class="ticker-badge">TREND</span><span class="ticker-text">ドロップシッピング市場2026年$4,014億 — 前年比21.3%成長でTikTok Shopが新主流チャネルに</span>
+  <span class="ticker-badge">TREND</span><span class="ticker-text">$20,000助成金の締切5月15日 — QuickBooks・Mailchimp・Venmoの3プログラム同時公募中</span>
+</div></div>
+
+<!-- HEADER -->
+<div class="header"><div class="header-inner">
+  <div class="logo"><div class="logo-icon">MB</div><div class="logo-text">MicroBiz<em>Daily</em></div></div>
+  <div class="header-actions"><div class="header-date">2026年4月5日（日）</div><div class="search-box"><span>🔍</span><span>記事を検索</span></div></div>
+</div></div>
+
+<!-- NAV -->
+<div class="nav"><div class="nav-inner">
+  <div class="nav-item active">トップ</div><div class="nav-item">個人開発</div><div class="nav-item">フリーランス</div><div class="nav-item">副業・兼業</div><div class="nav-item">EC・D2C</div><div class="nav-item">マーケティング</div><div class="nav-item">資金調達</div>
+</div></div>
+
+<div class="page"><div class="layout">
+<main>
+
+  <!-- HERO -->
+  <div class="sec">
+    <div class="sec-header"><div class="sec-bar"></div><div class="sec-title">TOP STORY</div></div>
+    <div class="hero" onclick="openArticle('hero')">
+      <div class="hero-visual">
+        <svg viewBox="0 0 600 340" xmlns="http://www.w3.org/2000/svg">
+          <defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#042f2e"/><stop offset="50%" stop-color="#134e4a"/><stop offset="100%" stop-color="#0f766e"/></linearGradient></defs>
+          <rect fill="url(#g1)" width="600" height="340"/>
+          <!-- Storefront -->
+          <g transform="translate(150,70)">
+            <rect width="130" height="160" rx="6" fill="rgba(255,255,255,.06)" stroke="rgba(255,255,255,.12)" stroke-width="1"/>
+            <rect x="10" y="12" width="110" height="60" rx="4" fill="rgba(20,184,166,.15)" stroke="rgba(20,184,166,.3)" stroke-width="1"/>
+            <rect x="20" y="28" width="40" height="6" rx="2" fill="rgba(20,184,166,.4)"/>
+            <rect x="20" y="40" width="60" height="4" rx="1" fill="rgba(20,184,166,.25)"/>
+            <rect x="20" y="50" width="30" height="4" rx="1" fill="rgba(20,184,166,.2)"/>
+            <!-- Products grid -->
+            <rect x="15" y="84" width="44" height="30" rx="3" fill="rgba(255,255,255,.06)" stroke="rgba(255,255,255,.08)"/>
+            <rect x="67" y="84" width="44" height="30" rx="3" fill="rgba(255,255,255,.06)" stroke="rgba(255,255,255,.08)"/>
+            <rect x="15" y="122" width="44" height="30" rx="3" fill="rgba(255,255,255,.06)" stroke="rgba(255,255,255,.08)"/>
+            <rect x="67" y="122" width="44" height="30" rx="3" fill="rgba(255,255,255,.06)" stroke="rgba(255,255,255,.08)"/>
+            <circle cx="37" cy="96" r="6" fill="rgba(20,184,166,.3)"/>
+            <circle cx="89" cy="96" r="6" fill="rgba(167,139,250,.3)"/>
+            <circle cx="37" cy="134" r="6" fill="rgba(251,191,36,.3)"/>
+            <circle cx="89" cy="134" r="6" fill="rgba(248,113,113,.3)"/>
+          </g>
+          <!-- AI sparkle -->
+          <g transform="translate(340,100)">
+            <circle r="50" fill="rgba(20,184,166,.08)" stroke="rgba(20,184,166,.2)" stroke-width="1"/>
+            <circle r="30" fill="rgba(20,184,166,.06)" stroke="rgba(20,184,166,.15)" stroke-width="1" stroke-dasharray="4 3"/>
+            <circle r="10" fill="rgba(20,184,166,.3)"/>
+            <text x="0" y="4" text-anchor="middle" font-family="Inter" font-size="12" font-weight="700" fill="rgba(20,184,166,.8)">AI</text>
+            <!-- Connection lines -->
+            <line x1="-50" y1="0" x2="-80" y2="-20" stroke="rgba(20,184,166,.2)" stroke-width="1.5" stroke-dasharray="4 3"/>
+            <line x1="-50" y1="10" x2="-80" y2="30" stroke="rgba(20,184,166,.2)" stroke-width="1.5" stroke-dasharray="4 3"/>
+            <line x1="-50" y1="20" x2="-80" y2="50" stroke="rgba(20,184,166,.2)" stroke-width="1.5" stroke-dasharray="4 3"/>
+          </g>
+          <!-- Timer badge -->
+          <g transform="translate(340,200)">
+            <rect x="-40" y="-12" width="80" height="24" rx="12" fill="rgba(20,184,166,.2)" stroke="rgba(20,184,166,.5)" stroke-width="1"/>
+            <text text-anchor="middle" y="4" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="rgba(20,184,166,.9)">5 min setup</text>
+          </g>
+          <!-- Floating elements -->
+          <g opacity=".15" font-family="monospace" font-size="9" fill="#5eead4">
+            <text x="380" y="270">shopify.create()</text>
+            <text x="60" y="270">products: 1,000+</text>
+            <text x="200" y="300">// AI generated</text>
+            <text x="420" y="300">revenue: $0 → $1M</text>
+          </g>
+          <!-- Shopify bag icon -->
+          <g transform="translate(480,80)" opacity=".2">
+            <rect x="-20" y="-5" width="40" height="44" rx="4" fill="none" stroke="#5eead4" stroke-width="1.5"/>
+            <path d="M-10,-5 V-15 A10,10 0 0,1 10,-15 V-5" fill="none" stroke="#5eead4" stroke-width="1.5"/>
+          </g>
+        </svg>
+      </div>
+      <div class="hero-content">
+        <div class="hero-tag tag-indie">SOLOPRENEUR</div>
+        <div class="hero-title">米国関税でスモールビジネスの輸入コスト3倍 ＆ Shopify B2B機能が無料解放 — 大再編の波を乗りこなす戦略</div>
+        <div class="hero-desc">2026年4月第1週、スモールビジネスを揺るがす2つの大きな動きが重なった。1つ目は米国の追加関税による輸入コスト急騰：中国・カナダ・メキシコ・EUを対象とした包括関税により、輸入中小企業の月次関税支払い額が過去1年で<strong>月$8,400から$27,200へ3倍以上</strong>に膨張。$50,000の商品を輸入するだけで<strong>$12,500の関税を前払い</strong>する状況で、米輸入企業の97%は中小企業だ。全米小規模企業協会の調査では<strong>61%が負の影響を報告</strong>している。2つ目の明るいニュースはShopifyのB2B機能解放：ShopifyはBasic・Grow・Advancedプランの全ユーザー向けに、企業プロフィール・カスタムカタログ3種・ボリューム割引・数量ルール等の<strong>B2B機能を追加費用ゼロ</strong>で提供開始した。B2B利用ショップは再注文頻度がDTC比<strong>4.1倍</strong>に達しており、今月から法人顧客向け販売に参入できる好機だ。なお4月15日にShopify Scriptsの編集・発行が終了し、6月30日に完全廃止となる点に注意が必要。<strong>活用の視点：</strong> 関税対策として①国内・近隣国サプライヤーへの転換 ②デジタル商品・サービスへのビジネスモデルシフト ③B2B販路の新規開拓 の3つが急務。Shopifyを使っているなら今すぐB2B機能を活用しよう。</div>
+        <div class="hero-meta">
+          <a class="src-link" href="https://www.marketplace.org/2026/04/01/small-business-tariff-impact/" target="_blank" onclick="event.stopPropagation()">Marketplace</a>
+          <a class="src-link" href="https://www.shopify.com/blog/shopify-b2b-updates-2026" target="_blank" onclick="event.stopPropagation()">Shopify Blog</a>
+          <span class="hero-meta-dot"></span><span>2026.04.01〜05</span>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat"><div class="hero-stat-val" style="color:var(--accent)">3倍</div><div class="hero-stat-label">中小企業の関税負担増</div></div>
+          <div class="hero-stat"><div class="hero-stat-val" style="color:var(--blue)">4.1倍</div><div class="hero-stat-label">Shopify B2B再注文頻度</div></div>
+          <div class="hero-stat"><div class="hero-stat-val" style="color:var(--green)">61%</div><div class="hero-stat-label">関税で打撃の中小企業比率</div></div>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
-<nav class="category-nav">
-  <a href="#top-news" class="active">トップニュース</a>
-  <a href="#solo">ソロプレナー・副業</a>
-  <a href="#ec">EC・ドロップシッピング</a>
-  <a href="#ai-tools">AIツール・自動化</a>
-  <a href="#funding">資金調達・助成</a>
-  <a href="#policy">税制・規制</a>
-  <a href="#global">グローバル動向</a>
-</nav>
 
-<!-- Hero -->
-<section id="top-news" class="hero-section">
-  <article class="hero-main">
-    <span class="tag tag-solo">ソロプレナー</span>
-    <h1>Y Combinator「$500Kの資金で10億ドル企業を作れる時代が来た」 — AIが1人企業の限界を破壊</h1>
-    <p class="hero-summary">Y Combinatorのパートナー、アーロン・エプスタインが2026年の展望として衝撃的な発言を行った。「新しいAIツールのおかげで、少人数の高機動チーム、あるいはソロファウンダーでさえも、わずか<strong>$500K</strong>（約7,500万円）の資金で数十億ドル規模の企業を構築できる時代が来た」と述べている。実際に、2026年のYC最新バッチでは1〜3人チームのスタートアップが過半数を占め、創業わずか8週間で7桁（数百万ドル）の顧客契約を獲得しているケースが続出している。背景にあるのはAIエージェントの急速な進化で、従来は10人以上のチームが必要だった開発・マーケティング・カスタマーサポートを、AIが80〜85%を代行し、コストは従来チームの<strong>2〜5%</strong>で済むという。ソロプレナー（1人起業家）の数も急増しており、米国だけで<strong>7,000万人以上</strong>が独立ワーカーとして活動。そのうち77%が初年度で黒字化を達成している。<br><strong>活用の視点:</strong> 「人を雇わなければスケールできない」という従来の常識が崩壊した。AIツール（ChatGPT、Claude、Cursor等）を活用すれば、1人でもSaaS開発・コンテンツ制作・顧客対応を回せる。起業のハードルは資金面でも人材面でも劇的に下がっており、副業からのスモールスタートが最も合理的な戦略になっている。</p>
-    <div class="meta">出典: Y Combinator / Entrepreneur / StartupOwl ／ 2026年4月</div>
-  </article>
-  <aside class="hero-sub">
-    <article class="sub-news-card">
-      <span class="tag tag-ec">EC</span>
-      <h2>クリエイターエコノミーが$2,500億超え — 個人が「メディア企業」になる時代</h2>
-      <p>クリエイターエコノミーの市場規模が2026年に世界で<strong>$250B</strong>（約37.5兆円）を突破した。YouTube、TikTok、Instagramなどのプラットフォームに加え、Substack、Patreon、Gumroadなどの直接課金型サービスが成長。特にショート動画とアプリ内決済を組み合わせた「ソーシャルコマース」が急拡大しており、個人クリエイターがブランドを構築し、広告・物販・サブスクリプションを組み合わせて月収100万円以上を稼ぐケースが一般化している。<br><strong>活用の視点:</strong> 自社の専門知識やノウハウをコンテンツ化して直接販売する「ナレッジコマース」は、初期投資ほぼゼロで始められる。SNSフォロワーがいなくても、ニッチな専門性があれば少数の高単価顧客を獲得できる。</p>
-      <div class="meta">出典: Sashmira / Entrepreneur</div>
-    </article>
-    <article class="sub-news-card">
-      <span class="tag tag-ai">AIツール</span>
-      <h2>フリーランサーの77%がAIツールを使用 — 生産性が2〜3倍に</h2>
-      <p>Upworkの最新調査で、フリーランサーの<strong>77%</strong>がAIツールを日常業務に導入済みであることが判明。AIを活用しているフリーランサーは<strong>20〜40%</strong>の生産性向上を報告しており、以前6時間かかっていた納品物が2.5時間で完了するようになった。料金は据え置きのため、時間あたりの利益が約3倍に増加している。<br><strong>活用の視点:</strong> AIツールは「使うか使わないか」ではなく「どう使いこなすか」の段階に入った。ChatGPT Plus + 専門ツール1〜2個が最適解で、ライターはJasper、デザイナーは画像生成AI、開発者はCursorとの組み合わせが主流。</p>
-      <div class="meta">出典: Upwork / Zemith</div>
-    </article>
-  </aside>
-</section>
-
-<!-- Stats -->
-<div class="stats-bar">
-  <div class="stat-card"><div class="stat-number">7,000万人</div><div class="stat-label">米国の独立ワーカー数</div></div>
-  <div class="stat-card"><div class="stat-number">77%</div><div class="stat-label">初年度黒字化率（ソロプレナー）</div></div>
-  <div class="stat-card"><div class="stat-number">$674B</div><div class="stat-label">ギグエコノミー市場規模</div></div>
-  <div class="stat-card"><div class="stat-number">340%</div><div class="stat-label">SaaSマイクロニッチの成長率</div></div>
-</div>
-
-<!-- ソロプレナー・副業 -->
-<section id="solo" class="section-block">
-  <h2 class="section-title"><span class="accent-bar"></span>👤 ソロプレナー・副業</h2>
-  <div class="card-grid">
-    <article class="news-card"><span class="tag tag-solo">ソロプレナー</span><h3>アメリカ人の3人に1人が副業を持つ時代 — 2026年はさらに増加へ</h3><p>米国では労働人口の約<strong>36%</strong>にあたる7,000万人以上が独立ワーカーとして活動しており、3人に1人が何らかの副業（サイドハッスル）を持っている。この数字は2026年中にさらに増加すると予測されている。特に注目すべきは、ソロプレナーの約半数が<strong>$5,000未満</strong>（約75万円未満）の初期資金で起業していること。そして77%が初年度で黒字化を達成しており、「起業＝大きなリスク」という従来のイメージが完全に覆されている。Inc.誌が選ぶ2026年の有望副業トップ5は、AIコンサルティング、コンテンツ制作代行、ニッチEC、オンライン教育、マイクロSaaSとなっている。<br><strong>活用の視点:</strong> 本業を続けながら週10〜15時間の副業でスキルと収入源を増やすのが最もリスクの低い起業戦略。特にAI関連スキル（プロンプトエンジニアリング、AI導入コンサル）は需要が供給を大きく上回っており、高単価で仕事を獲得しやすい。</p><div class="card-footer"><span class="source">出典: Inc. / Dallas Weekly / StartupOwl</span><a href="https://www.inc.com/chris-morris/5-most-promising-side-hustle-businesses-to-start-in-2026/91279564" target="_blank" rel="noopener">詳細 →</a></div></article>
-    <article class="news-card"><span class="tag tag-solo">ソロプレナー</span><h3>SaaSマイクロニッチが340%成長 — ソロ開発者の黄金時代</h3><p>Gartnerの2025年Q4レポートによると、SaaS市場においてマイクロニッチ（特定の狭い領域に特化したソフトウェア）が前年比<strong>340%</strong>の成長を記録した。大手プラットフォームが汎用的なサービスを提供する一方、特定業界・特定業務に深く特化したマイクロSaaSがソロ開発者によって次々と生まれている。例えば「歯科医院向け予約管理」「不動産エージェント向けCRM」「ペットサロン向け顧客管理」など、大手が手を出しにくいニッチで月額$50〜200の課金モデルが成功している。顧客100人で月収$5,000〜20,000が現実的な目標。<br><strong>活用の視点:</strong> 自分がよく知る業界の「まだデジタル化されていない業務」を見つけ、AIコーディングツール（Cursor、Replit Agent等）で開発すれば、1人でもSaaSビジネスを構築できる。開発期間も従来の数ヶ月から数週間に短縮されている。</p><div class="card-footer"><span class="source">出典: EntrepreneurLoop / PrometAI / Gartner</span><a href="https://entrepreneurloop.com/bootstrapped-saas-niches-solo-founders/" target="_blank" rel="noopener">詳細 →</a></div></article>
-    <article class="news-card"><span class="tag tag-solo">ソロプレナー</span><h3>「マイクロ帝国」戦略 — おやつ代で始めるグローバルビジネス</h3><p>eOnline Marketing Toolsが提唱する「マイクロ帝国（Micro-Empire）」戦略が注目を集めている。これは月額数千円のAIツールとノーコードプラットフォームを組み合わせ、1人で複数の小規模ビジネスを同時運営するアプローチ。具体的には、(1) AIで自動化されたニッチブログ、(2) Shopifyでのドロップシッピング、(3) Gumroadでのデジタル商品販売、(4) Substackでの有料ニュースレター、を1人で並行運営し、各事業が月$500〜2,000の収益を生む仕組みを構築する。初期費用はAIツール月額$20 + ドメイン代程度で済む。<br><strong>活用の視点:</strong> 収入源を分散させる「ポートフォリオ型起業」は、1つの事業がうまくいかなくても他でカバーできるリスク分散効果がある。AIの自動化で複数事業の並行運営が現実的になった。</p><div class="card-footer"><span class="source">出典: eOnline Marketing Tools</span><a href="https://www.eonlinemarketingtools.com/the-micro-empire-strategy-how-to-build-a-global-business-for-the-price-of-a-snack/" target="_blank" rel="noopener">詳細 →</a></div></article>
+  <!-- PICKUP -->
+  <div class="sec">
+    <div class="sec-header"><div class="sec-bar"></div><div class="sec-title">PICKUP</div></div>
+    <div class="pickup-grid">
+      <div class="pickup-card" onclick="openArticle('us_tariff_impact')">
+        <div class="pickup-thumb"><svg viewBox="0 0 300 120"><defs><linearGradient id="p1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#450a0a"/><stop offset="100%" stop-color="#7f1d1d"/></linearGradient></defs><rect fill="url(#p1)" width="300" height="120"/><g transform="translate(150,48)" opacity=".35"><rect x="-32" y="-18" width="64" height="36" rx="4" fill="none" stroke="#f87171" stroke-width="1.5"/><text x="0" y="-2" text-anchor="middle" font-family="Inter" font-size="11" font-weight="700" fill="rgba(248,113,113,.7)">×3倍</text><text x="0" y="14" text-anchor="middle" font-family="Inter" font-size="8" fill="rgba(248,113,113,.4)">月次関税コスト</text></g><text x="150" y="108" text-anchor="middle" font-family="Inter" font-size="10" font-weight="700" fill="rgba(255,255,255,.2)">US TARIFFS 2026</text></svg></div>
+        <div class="pickup-body"><span class="pickup-tag tag-indie">規制</span><div class="pickup-title">米国関税で輸入中小企業の月次コストが3倍 — 61%がビジネスへの打撃を報告</div><div class="pickup-meta"><span>Marketplace / Fortune</span><span>2026.04.04</span></div></div>
+      </div>
+      <div class="pickup-card" onclick="openArticle('shopify_b2b_free')">
+        <div class="pickup-thumb"><svg viewBox="0 0 300 120"><defs><linearGradient id="p2" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#064e3b"/><stop offset="100%" stop-color="#059669"/></linearGradient></defs><rect fill="url(#p2)" width="300" height="120"/><g transform="translate(150,46)" opacity=".35"><rect x="-30" y="-22" width="60" height="44" rx="5" fill="none" stroke="#34d399" stroke-width="1.5"/><text x="0" y="-4" text-anchor="middle" font-family="Inter" font-size="8" fill="rgba(52,211,153,.6)">B2B FREE</text><text x="0" y="8" text-anchor="middle" font-family="Inter" font-size="7" fill="rgba(52,211,153,.4)">再注文4.1倍</text><text x="0" y="20" text-anchor="middle" font-family="Inter" font-size="7" fill="rgba(52,211,153,.3)">4/15 Scripts終了</text></g><text x="150" y="108" text-anchor="middle" font-family="Inter" font-size="10" font-weight="700" fill="rgba(255,255,255,.2)">SHOPIFY B2B</text></svg></div>
+        <div class="pickup-body"><span class="pickup-tag tag-ec">EC・D2C</span><div class="pickup-title">Shopify B2B機能が全プランで無料 — 再注文頻度DTC比4.1倍・4/15 Scripts廃止注意</div><div class="pickup-meta"><span>Shopify / Digital Commerce 360</span><span>2026.04.04</span></div></div>
+      </div>
+      <div class="pickup-card" onclick="openArticle('grants_deadline_may')">
+        <div class="pickup-thumb"><svg viewBox="0 0 300 120"><defs><linearGradient id="p3" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#064e3b"/><stop offset="100%" stop-color="#059669"/></linearGradient></defs><rect fill="url(#p3)" width="300" height="120"/><g transform="translate(150,46)" opacity=".35"><rect x="-32" y="-20" width="64" height="40" rx="4" fill="none" stroke="#34d399" stroke-width="1.5"/><text x="0" y="-2" text-anchor="middle" font-family="Inter" font-size="11" font-weight="900" fill="rgba(52,211,153,.6)">$20,000</text><text x="0" y="14" text-anchor="middle" font-family="Inter" font-size="7" fill="rgba(52,211,153,.4)">締切5月15日</text></g><text x="150" y="108" text-anchor="middle" font-family="Inter" font-size="10" font-weight="700" fill="rgba(255,255,255,.2)">GRANTS 2026</text></svg></div>
+        <div class="pickup-body"><span class="pickup-tag tag-side">資金調達</span><div class="pickup-title">$20,000助成金3プログラム同時公募中 — QuickBooks・Venmo・Amexで締切5月15日</div><div class="pickup-meta"><span>Inc. / Nav</span><span>2026.04.04</span></div></div>
+      </div>
+      <div class="pickup-card" onclick="openArticle('micro_agency_ai')">
+        <div class="pickup-thumb"><svg viewBox="0 0 300 120"><defs><linearGradient id="p4" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#134e4a"/><stop offset="100%" stop-color="#0d9488"/></linearGradient></defs><rect fill="url(#p4)" width="300" height="120"/><g transform="translate(150,46)" opacity=".35"><circle r="26" fill="none" stroke="#5eead4" stroke-width="1.5"/><text x="0" y="-4" text-anchor="middle" font-family="Inter" font-size="9" font-weight="700" fill="rgba(94,234,212,.6)">AI Agency</text><text x="0" y="10" text-anchor="middle" font-family="Inter" font-size="8" fill="rgba(94,234,212,.4)">$5K〜$50K/月</text></g><text x="150" y="108" text-anchor="middle" font-family="Inter" font-size="10" font-weight="700" fill="rgba(255,255,255,.2)">MICRO AGENCY</text></svg></div>
+        <div class="pickup-body"><span class="pickup-tag tag-indie">AI自動化</span><div class="pickup-title">AI自動化マイクロエージェンシーが急成長 — 初期投資$5,000以下で月収$50,000も</div><div class="pickup-meta"><span>Balochis / Nucamp</span><span>2026.04.04</span></div></div>
+      </div>
+    </div>
   </div>
-</section>
 
-<!-- EC・ドロップシッピング -->
-<section id="ec" class="section-block">
-  <h2 class="section-title"><span class="accent-bar"></span>🛒 EC・ドロップシッピング</h2>
-  <div class="card-grid">
-    <article class="news-card"><span class="tag tag-ec">EC</span><h3>ドロップシッピング市場$350B突破 — 「ブランド構築型」が生き残りの鍵</h3><p>グローバルドロップシッピング市場が2024年に<strong>$350B</strong>（約52.5兆円）に到達し、2030年には$1,253Bに成長する見通し。しかし2026年のトレンドは明確に「安売り転売」から「ブランド構築型」へ移行している。汎用的な商品を安く仕入れて転売するモデルは広告費の高騰と競合激化で利益率が急低下。成功しているのは、特定ニッチに深く入り込み、独自ブランドを構築し、顧客ロイヤルティを重視するビジネスのみ。2026年のトレンド商品カテゴリは「在宅ヘルス」が圧倒的で、高級スパ体験を自宅で再現する美容・健康デバイスが人気。<br><strong>活用の視点:</strong> ドロップシッピングで成功するには「安く仕入れて売る」だけでは不十分。独自ブランドのストーリー、高品質な商品写真・動画、アフターサポートが差別化要因になる。AIツールでブランディング素材（ロゴ、商品説明、SNS投稿）を自動生成するのが効率的。</p><div class="card-footer"><span class="source">出典: Modalyst / Branvas / Speed Commerce</span><a href="https://branvas.com/blogs/news/the-new-era-of-dropshipping-from-generic-hustles-to-brand-driven-businesses" target="_blank" rel="noopener">詳細 →</a></div></article>
-    <article class="news-card"><span class="tag tag-ec">EC</span><h3>ソーシャルコマースが2026年最大のEC トレンドに — SNS内で完結する購買体験</h3><p>Shopifyの最新レポートによると、ソーシャルコマース（SNSアプリ内での商品発見から購入までの一気通貫体験）が2026年のEC最大トレンドとなっている。TikTok Shop、Instagram Shopping、YouTubeショッピングが急成長し、消費者がSNSアプリから離れることなく商品を購入できる環境が整った。特にショート動画とアプリ内チェックアウトの組み合わせが強力で、小規模ブランドでもバイラルコンテンツ1本で数百万円の売上を達成するケースが増えている。マイクロインフルエンサー（フォロワー1,000〜10,000人）との連携が最もROIが高い施策として注目されている。<br><strong>活用の視点:</strong> 自社ECサイトへの集客コスト（Google広告等）が高騰する中、SNS内で完結する販売チャネルは低コストで始められる。特にTikTok Shopは参入障壁が低く、商品動画を自分で撮影してアップするだけで始められる。</p><div class="card-footer"><span class="source">出典: Shopify / Wix / Teamgate</span><a href="https://www.shopify.com/blog/small-business-trends" target="_blank" rel="noopener">詳細 →</a></div></article>
-    <article class="news-card"><span class="tag tag-ec">EC</span><h3>暗号通貨決済がECで「完全に主流」に — 2026年の転換点</h3><p>2026年、暗号通貨による支払いオプションがeコマースプラットフォームで実験段階を脱し、完全に主流化した。Shopify、WooCommerce、BigCommerceなどの主要プラットフォームが標準でBitcoin、Ethereum、USDCなどの暗号通貨決済に対応。特にクロスボーダー（越境）ECでは、為替手数料や国際送金の遅延を回避できる暗号通貨決済のメリットが大きく、海外顧客からの売上が30〜50%増加したという事例も報告されている。<br><strong>活用の視点:</strong> 海外向け販売を行っているマイクロビジネスは、暗号通貨決済の導入を検討すべきタイミング。決済手数料が従来のクレジットカード（3〜5%）に比べて大幅に低い（0.5〜1%）点もメリット。</p><div class="card-footer"><span class="source">出典: Inventory Source / Modalyst</span><a href="https://www.inventorysource.com/the-future-of-dropshipping/" target="_blank" rel="noopener">詳細 →</a></div></article>
+  <!-- INDIE DEV SECTION -->
+  <div class="sec">
+    <div class="sec-header"><div class="sec-bar" style="background:var(--purple)"></div><div class="sec-title">個人開発</div><div class="sec-more">すべて見る →</div></div>
+    <div class="table-box">
+      <div class="table-box-title">個人開発者向けプラットフォーム比較（2026年4月5日）</div>
+      <div class="table-box-sub">主要プラットフォームの手数料・機能・ユーザー数を一覧で比較</div>
+      <div style="overflow-x:auto"><table class="dtable"><thead><tr><th>プラットフォーム</th><th>カテゴリ</th><th style="min-width:180px">月間アクティブ開発者</th><th>手数料</th><th>特徴</th></tr></thead><tbody>
+        <tr><td class="mn">Shopify</td><td>EC構築</td><td><div class="bar-cell"><div class="bar-bg"><div class="bar-fill" style="width:90%;background:var(--accent)"></div></div><span class="bar-val" style="color:var(--accent)">480万</span></div></td><td>2.6%〜</td><td>AI自動生成・新機能</td></tr>
+        <tr><td class="mn">Gumroad</td><td>デジタル販売</td><td><div class="bar-cell"><div class="bar-bg"><div class="bar-fill" style="width:35%;background:var(--purple)"></div></div><span class="bar-val" style="color:var(--purple)">120万</span></div></td><td>10%</td><td>シンプル・即日販売</td></tr>
+        <tr><td class="mn">Substack</td><td>ニュースレター</td><td><div class="bar-cell"><div class="bar-bg"><div class="bar-fill" style="width:55%;background:var(--blue)"></div></div><span class="bar-val" style="color:var(--blue)">200万</span></div></td><td>10%</td><td>有料ニュースレター</td></tr>
+        <tr><td class="mn">LemonSqueezy</td><td>SaaS販売</td><td><div class="bar-cell"><div class="bar-bg"><div class="bar-fill" style="width:20%;background:var(--orange)"></div></div><span class="bar-val" style="color:var(--orange)">65万</span></div></td><td>5%+50¢</td><td>税務自動処理</td></tr>
+      </tbody></table></div>
+      <div style="margin-top:20px"><div class="chart-title">個人開発者の月間収益分布（2026年4月調査・n=12,000）</div><div class="chart-bars">
+        <div class="chart-col"><div class="chart-bar-val" style="color:var(--muted)">32%</div><div class="chart-bar" style="height:64%;background:linear-gradient(180deg,#9ca3af,#6b7280)"></div><div class="chart-bar-label">〜5万円</div></div>
+        <div class="chart-col"><div class="chart-bar-val" style="color:var(--accent)">28%</div><div class="chart-bar" style="height:56%;background:linear-gradient(180deg,#5eead4,#0d9488)"></div><div class="chart-bar-label">5〜20万</div></div>
+        <div class="chart-col"><div class="chart-bar-val" style="color:var(--blue)">18%</div><div class="chart-bar" style="height:36%;background:linear-gradient(180deg,#60a5fa,#2563eb)"></div><div class="chart-bar-label">20〜50万</div></div>
+        <div class="chart-col"><div class="chart-bar-val" style="color:var(--purple)">12%</div><div class="chart-bar" style="height:24%;background:linear-gradient(180deg,#a78bfa,#7c3aed)"></div><div class="chart-bar-label">50〜100万</div></div>
+        <div class="chart-col"><div class="chart-bar-val" style="color:var(--orange)">10%</div><div class="chart-bar" style="height:20%;background:linear-gradient(180deg,#fbbf24,#d97706)"></div><div class="chart-bar-label">100万〜</div></div>
+      </div><div class="diagram-caption">出典: IndieHackers Japan 調査 2026年版・回答者12,000人</div></div>
+    </div>
+    <div class="card-grid">
+      <div class="card-v" onclick="openArticle('famous_ai_detail')">
+        <div class="card-v-thumb"><svg viewBox="0 0 400 150"><defs><linearGradient id="c1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#134e4a"/><stop offset="100%" stop-color="#0d9488"/></linearGradient></defs><rect fill="url(#c1)" width="400" height="150"/><g transform="translate(200,58)" opacity=".3"><rect x="-40" y="-30" width="80" height="60" rx="5" fill="none" stroke="#5eead4" stroke-width="1.5"/><text x="0" y="-10" text-anchor="middle" font-family="Inter" font-size="11" font-weight="700" fill="rgba(94,234,212,.6)">Famous.ai</text><text x="0" y="6" text-anchor="middle" font-family="Inter" font-size="8" fill="rgba(94,234,212,.4)">1セッションで完成</text><text x="0" y="20" text-anchor="middle" font-family="Inter" font-size="8" fill="rgba(94,234,212,.3)">POD・ドロップシッピング対応</text></g></svg></div>
+        <div class="card-v-body"><span class="card-v-tag tag-ec">EC・D2C</span><div class="card-v-title">Famous.ai ローンチ — AIが1セッションでECストアを完全構築</div><div class="card-v-desc">プリントオンデマンド・ドロップシッピング・デジタル商品の販売に対応。<strong>手動作業なしで収益準備完了のストア</strong>を即日構築。Shopify Tinkerも同時期に100以上のAIツールを無料提供。<strong>活用の視点：</strong> 技術知識ゼロでECを始めるハードルが消滅。アイデアがあれば今すぐ検証できる環境が整った。</div></div>
+        <div class="card-v-footer"><a class="src-link" href="https://www.globenewswire.com/news-release/2026/04/02/3267747/0/en/Famous-Labs-Launches-Famous-ai-to-Give-Every-Entrepreneur-a-Fast-and-Professional-Online-Store.html" target="_blank" onclick="event.stopPropagation()">GlobeNewswire</a><span>2026.04.02</span></div>
+      </div>
+      <div class="card-v" onclick="openArticle('ai_adoption_smb')">
+        <div class="card-v-thumb"><svg viewBox="0 0 400 150"><defs><linearGradient id="c2" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#1e1b4b"/><stop offset="100%" stop-color="#4338ca"/></linearGradient></defs><rect fill="url(#c2)" width="400" height="150"/><g transform="translate(200,58)" opacity=".3"><circle r="42" fill="none" stroke="#a78bfa" stroke-width="1.5"/><text x="0" y="4" text-anchor="middle" font-family="Inter" font-size="12" font-weight="700" fill="rgba(167,139,250,.6)">68%導入</text><text x="0" y="-50" text-anchor="middle" font-family="Inter" font-size="8" fill="rgba(167,139,250,.4)">91%が売上増と回答</text></g></svg></div>
+        <div class="card-v-body"><span class="card-v-tag tag-indie">AI自動化</span><div class="card-v-title">中小企業のAI定期利用率が68%に達する — 2027年には65%以上がAI自動化を導入予定</div><div class="card-v-desc">Salesforce調査では<strong>AIを使うSMBの91%が「売上増加につながった」</strong>と回答。Zapier・Make・n8nの三巨頭がノーコード自動化の標準ツールに定着。問い合わせ対応・リード獲得・予約管理・フォローアップ自動化が優先ユースケースのトップ4。月額$50以下のツールで実装可能。<strong>活用の視点：</strong> まずZapier無料プランでメール→スプレッドシート連携から始め、慣れたらMakeやn8nでより複雑なワークフローを構築するステップアップが最効率。</div></div>
+        <div class="card-v-footer"><a class="src-link" href="https://blog.mean.ceo/ai-automation-trends-april-2026/" target="_blank" onclick="event.stopPropagation()">Mean CEO Blog</a><span>2026.04.03</span></div>
+      </div>
+    </div>
   </div>
-</section>
 
-<!-- AIツール・自動化 -->
-<section id="ai-tools" class="section-block">
-  <h2 class="section-title"><span class="accent-bar"></span>🤖 AIツール・自動化</h2>
-  <div class="card-grid">
-    <article class="news-card"><span class="tag tag-ai">AIツール</span><h3>Entrepreneur誌「AIだけで1人ビジネスを運営する7つのツール — スタッフ不要・コード不要」</h3><p>Entrepreneur誌が「スタッフなし・コードなしで1人ビジネスを運営するためのAIツール7選」を特集。AIエージェントが業務の<strong>80〜85%</strong>を代行し、コストは従来チームの<strong>2〜5%</strong>で済む時代が到来したと報じている。推奨ツール構成は: (1) ChatGPT Plus/Claude Pro（万能アシスタント）、(2) Perplexity Pro（リサーチ）、(3) Jasper/Copy.ai（コンテンツ制作）、(4) Midjourney/DALL-E（画像生成）、(5) Cursor/Replit（開発）、(6) Zapier/Make（業務自動化）、(7) Notion AI（プロジェクト管理）。月額合計$100〜200で「10人分」の仕事ができるとしている。<br><strong>活用の視点:</strong> 全部使う必要はなく、自分のボトルネック（最も時間がかかっている業務）に対応するツール2〜3個に絞るのが最適解。まずはChatGPT Plus（$20/月）から始め、効果を実感してから拡張するアプローチが推奨される。</p><div class="card-footer"><span class="source">出典: Entrepreneur</span><a href="https://www.entrepreneur.com/growing-a-business/7-ai-tools-that-run-a-one-person-business-in-2026-no/501943" target="_blank" rel="noopener">詳細 →</a></div></article>
-    <article class="news-card"><span class="tag tag-ai">AIツール</span><h3>「2026年に勝つフリーランサーはAIツールの数ではなく使い方で差がつく」</h3><p>LumiChatsの分析レポートによると、2026年に成功しているフリーランサーは最も多くのAIツールを使っている人ではなく、<strong>2〜3個のツールを深く使いこなしている人</strong>だと結論づけた。具体的には、(1) 汎用AIアシスタント（ChatGPT Plus or Claude Pro、月$20）、(2) 専門分野のニッチツール1個、(3) 自動化ツール（Zapier等）の3つが最適構成。ライター・マーケターはChatGPT+Jasper、デザイナーはChatGPT+画像生成AI、開発者はChatGPT+Cursorの組み合わせが主流。Grammarly Pro（月$12）は校正ツールとして汎用AIより精度が高く、全職種で推奨されている。<br><strong>活用の視点:</strong> AIツール導入の失敗パターンは「あれもこれも試して結局どれも使いこなせない」こと。自分の仕事で最も時間のかかるタスクを1つ特定し、そこにピンポイントでAIを導入するのが成功の鍵。</p><div class="card-footer"><span class="source">出典: LumiChats / Upwork / Zemith</span><a href="https://lumichats.com/blog/ai-tools-freelancers-small-business-owners-usa-2026" target="_blank" rel="noopener">詳細 →</a></div></article>
-    <article class="news-card"><span class="tag tag-ai">AIツール</span><h3>スモールビジネスのAI活用が「試す」から「戦略的に使う」段階に移行</h3><p>Paychexの調査によると、2026年のスモールビジネスにおけるAI活用は、「とりあえず試してみる」フェーズから「特定の課題にAIを戦略的に適用し、測定可能な成果を出す」フェーズに完全に移行した。特に効果が高い活用分野は: (1) <strong>給与分析</strong>（人件費の最適化）、(2) <strong>採用自動化</strong>（候補者スクリーニングの自動化）、(3) <strong>人材計画</strong>（離職予測・スキルギャップ分析）、(4) <strong>パフォーマンス管理</strong>（目標設定・評価の自動化）。BizTech Magazineは「2026年はスモールビジネスにとってAIが"あると便利"から"なければ競争できない"に変わった年」と総括している。<br><strong>活用の視点:</strong> AI導入の第一歩は「コスト削減」ではなく「意思決定の質の向上」から始めるべき。売上データ・顧客データの分析にAIを使い、データに基づいた判断ができる体制を整えることが最優先。</p><div class="card-footer"><span class="source">出典: Paychex / BizTech Magazine</span><a href="https://www.paychex.com/articles/management/small-business-trends" target="_blank" rel="noopener">詳細 →</a></div></article>
+  <!-- FREELANCE SECTION -->
+  <div class="sec">
+    <div class="sec-header"><div class="sec-bar" style="background:var(--blue)"></div><div class="sec-title">フリーランス</div><div class="sec-more">すべて見る →</div></div>
+    <div class="card-list">
+      <div class="card-h" onclick="openArticle('1099k_detail')">
+        <div class="card-h-thumb"><svg viewBox="0 0 220 140"><defs><linearGradient id="a1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#78350f"/><stop offset="100%" stop-color="#b45309"/></linearGradient></defs><rect fill="url(#a1)" width="220" height="140"/><g transform="translate(110,55)" opacity=".3"><rect x="-38" y="-22" width="76" height="44" rx="4" fill="none" stroke="#fbbf24" stroke-width="1.5"/><text x="0" y="-4" text-anchor="middle" font-family="Inter" font-size="14" font-weight="900" fill="rgba(251,191,36,.5)">$20,000</text><text x="0" y="14" text-anchor="middle" font-family="Inter" font-size="7" fill="rgba(251,191,36,.4)">OBBBA成立</text></g><text x="110" y="118" text-anchor="middle" font-family="Inter" font-size="9" font-weight="700" fill="rgba(255,255,255,.2)">IRS / OBBBA</text></svg></div>
+        <div class="card-h-body"><span class="card-h-tag tag-freelance">TAX</span><div class="card-h-title">OBBBA 1099申告閾値大改正 — 1099-NEC $600→$2,000・チップ$5,000非課税控除も新設</div><div class="card-h-desc">One Big Beautiful Bill Act（OBBBA）により1099-NEC/MISCの閾値が<strong>$600→$2,000</strong>に引き上げ（2026年支払い分から）、1099-K閾値は<strong>$20,000＋200取引以上</strong>に復帰。さらにチップ収入の<strong>最大$5,000が非課税控除</strong>可能となりサービス業・ギグワーカーに恩恵。Form 1099-DAによる暗号資産・NFT取引の詳細報告義務も新設。<strong>活用の視点：</strong> 書類処理の負担が大幅減少。節約できた時間をビジネス成長に使おう。$2,000未満の収入でも自己申告義務は継続するため注意。</div><div class="card-h-meta"><a class="src-link" href="https://blog.freelancersunion.org/2025/09/08/freelancers-and-1099s-an-important-tax-reporting-change-enacted-by-the-one-big-beautiful-bill/" target="_blank" onclick="event.stopPropagation()">Freelancers Union</a><a class="src-link" href="https://onpay.com/insights/1099-reporting-threshold-updates/" target="_blank" onclick="event.stopPropagation()">OnPay</a><span class="card-h-meta-dot"></span><span>2026.04.01〜04</span></div></div>
+      </div>
+      <div class="card-h" onclick="openArticle('gig_tax_guide')">
+        <div class="card-h-thumb"><svg viewBox="0 0 220 140"><defs><linearGradient id="a2" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#064e3b"/><stop offset="100%" stop-color="#059669"/></linearGradient></defs><rect fill="url(#a2)" width="220" height="140"/><g transform="translate(110,55)" opacity=".3"><circle r="28" fill="none" stroke="#34d399" stroke-width="2"/><text x="0" y="-5" text-anchor="middle" font-family="Inter" font-size="12" font-weight="700" fill="rgba(52,211,153,.6)">15.3%</text><text x="0" y="12" text-anchor="middle" font-family="Inter" font-size="7" fill="rgba(52,211,153,.4)">自営業税率</text></g><text x="110" y="118" text-anchor="middle" font-family="Inter" font-size="9" font-weight="700" fill="rgba(255,255,255,.2)">GIG TAX 2026</text></svg></div>
+        <div class="card-h-body"><span class="card-h-tag tag-freelance">FREELANCE</span><div class="card-h-title">2026年ギグワーカー税務ガイド — 自営業税15.3%と四半期予定納税の基本</div><div class="card-h-desc">米国フリーランサー必須の知識。自営業税は<strong>社会保障12.4%＋メディケア2.9%＝15.3%</strong>。課税所得の上限額は社会保障分$184,500。IRS推奨は受取金額の<strong>25〜30%を予約貯蓄</strong>。ギグ収入はデジタル追跡が強化中で無申告リスクが上昇。<strong>活用の視点：</strong> 節税には合法的な経費計上（ホームオフィス・機材・通信費）が有効。税理士との年次相談を投資として位置づけるべき。</div><div class="card-h-meta"><a class="src-link" href="https://www.finhabits.com/gig-worker-tax-guide-2026-simple-system-keep-more-earnings/" target="_blank" onclick="event.stopPropagation()">Finhabits</a><span class="card-h-meta-dot"></span><span>2026.04.01</span></div></div>
+      </div>
+    </div>
   </div>
-</section>
 
-<!-- 資金調達 -->
-<section id="funding" class="section-block">
-  <h2 class="section-title"><span class="accent-bar"></span>💰 資金調達・助成</h2>
-  <div class="card-grid">
-    <article class="news-card"><span class="tag tag-fund">資金</span><h3>ソロプレナーの約半数が$5,000未満で起業 — 低資本起業が主流に</h3><p>StartupOwlの最新調査によると、ソロプレナーの約<strong>半数が$5,000未満</strong>（約75万円未満）の初期資本で起業しており、そのうち77%が初年度で黒字化を達成している。従来の「数百万円の自己資金が必要」という起業の常識が完全に覆された。低資本で始められる理由は、(1) AIツールで開発・制作コストが激減、(2) クラウドサービスで初期インフラ投資がゼロ、(3) SNSマーケティングで広告費を最小化できるため。一方、事業拡大フェーズでは銀行融資（ビジネスクレジットライン）や少額ローンの活用が一般的。<br><strong>活用の視点:</strong> 「資金がないから起業できない」は2026年では通用しない。$5,000未満で始めて利益が出たら再投資する「ブートストラップ」モデルが最も成功率が高い。</p><div class="card-footer"><span class="source">出典: StartupOwl / ARF Financial</span><a href="https://startupowl.com/founders/solopreneur-business-ideas" target="_blank" rel="noopener">詳細 →</a></div></article>
-    <article class="news-card"><span class="tag tag-fund">資金</span><h3>Freed Fellowship助成金 — 米国のマイクロビジネスオーナー向け$1,000グラント</h3><p>Freed Fellowship Grant（フリード・フェローシップ助成金）が、米国のスモール・マイクロビジネスオーナー向けに<strong>$1,000</strong>の助成金を提供している。事業の運営年数に関係なく、どの段階のビジネスオーナーでも応募可能。他にもNerdWalletがまとめた2026年のスタートアップ向け助成金リストでは、女性起業家向け、マイノリティ向け、退役軍人向けなど多数のグラントプログラムが紹介されている。助成金は返済不要のため、特にマイクロビジネスの初期段階で活用価値が高い。<br><strong>活用の視点:</strong> 日本でも個人事業主・小規模事業者向けの補助金（持続化補助金、IT導入補助金、小規模事業者持続化補助金等）が多数あり、積極的に活用すべき。AIツール導入費用が対象になるケースも増えている。</p><div class="card-footer"><span class="source">出典: NerdWallet / Freed Fellowship</span><a href="https://www.nerdwallet.com/business/loans/learn/startup-business-grants" target="_blank" rel="noopener">詳細 →</a></div></article>
+  <!-- EC / D2C SECTION -->
+  <div class="sec">
+    <div class="sec-header"><div class="sec-bar" style="background:var(--green)"></div><div class="sec-title">EC・D2C</div><div class="sec-more">すべて見る →</div></div>
+    <div class="card-list">
+      <div class="card-h" onclick="openArticle('shopify_agentic_detail')">
+        <div class="card-h-thumb"><svg viewBox="0 0 220 140"><defs><linearGradient id="e1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#064e3b"/><stop offset="100%" stop-color="#059669"/></linearGradient></defs><rect fill="url(#e1)" width="220" height="140"/><g transform="translate(110,55)" opacity=".3"><rect x="-35" y="-22" width="70" height="44" rx="5" fill="none" stroke="#34d399" stroke-width="1.5"/><text x="0" y="-5" text-anchor="middle" font-family="Inter" font-size="9" font-weight="700" fill="rgba(52,211,153,.6)">Agentic</text><text x="0" y="8" text-anchor="middle" font-family="Inter" font-size="7" fill="rgba(52,211,153,.4)">Storefronts</text><text x="0" y="22" text-anchor="middle" font-family="Inter" font-size="7" fill="rgba(52,211,153,.3)">ChatGPT経由販売</text></g><text x="110" y="118" text-anchor="middle" font-family="Inter" font-size="9" font-weight="700" fill="rgba(255,255,255,.2)">SHOPIFY</text></svg></div>
+        <div class="card-h-body"><span class="card-h-tag tag-ec">EC・D2C</span><div class="card-h-title">Shopify Agentic Storefronts — ChatGPT・Microsoft Copilot・Google AI経由で商品購入が可能に</div><div class="card-h-desc">AIチャットボットから直接Shopify商品を購入できる新機能。消費者がChatGPTで「○○を買いたい」と言うだけで<strong>Shopifyのストアから商品が提示・購入完結</strong>。同時期にShopify TinkerアプリがAI画像生成・動画・ロゴなど<strong>100以上のAIツールを無料提供</strong>。<strong>活用の視点：</strong> AIチャット経由の購買行動が普及し始めた今、Shopifyに早期移行する優位性が高い。AIが紹介しやすい商品説明（明確・具体的）へのリライトが急務。</div><div class="card-h-meta"><a class="src-link" href="https://www.practicalecommerce.com/new-ecommerce-tools-april-1-2026" target="_blank" onclick="event.stopPropagation()">Practical Ecommerce</a><a class="src-link" href="https://www.shopify.com/blog/ai-dropshipping" target="_blank" onclick="event.stopPropagation()">Shopify Blog</a><span class="card-h-meta-dot"></span><span>2026.04.01</span></div></div>
+      </div>
+      <div class="card-h" onclick="openArticle('ai_dropshipping')">
+        <div class="card-h-thumb"><svg viewBox="0 0 220 140"><defs><linearGradient id="e2" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#134e4a"/><stop offset="100%" stop-color="#0d9488"/></linearGradient></defs><rect fill="url(#e2)" width="220" height="140"/><g transform="translate(110,55)" opacity=".3"><rect x="-35" y="-20" width="70" height="40" rx="5" fill="none" stroke="#5eead4" stroke-width="1.5"/><text x="0" y="-5" text-anchor="middle" font-family="Inter" font-size="10" font-weight="700" fill="rgba(94,234,212,.6)">AI Drop</text><text x="0" y="12" text-anchor="middle" font-family="Inter" font-size="7" fill="rgba(94,234,212,.4)">7-Figure Automation</text></g><text x="110" y="118" text-anchor="middle" font-family="Inter" font-size="9" font-weight="700" fill="rgba(255,255,255,.2)">DROPSHIPPING AI</text></svg></div>
+        <div class="card-h-body"><span class="card-h-tag tag-ec">EC・D2C</span><div class="card-h-title">AIドロップシッピング2026 — 商品選定・リスティング・価格改定を全自動化</div><div class="card-h-desc">AIによるトレンド商品自動選定・Designkitのプロンプト1つで商品画像フルセット生成・動的価格設定が標準化。Jliveoが<strong>B2Bクロスボーダー調達〜発送を一元管理</strong>するプラットフォームをリリース。人気インフルエンサーのAI自動化ドロップシッピング売上が年<strong>$100万超</strong>の事例が増加。<strong>活用の視点：</strong> 商品リサーチにAIを使い競合が少ないニッチを素早く発見。画像生成ツールで撮影コストをゼロに。</div><div class="card-h-meta"><a class="src-link" href="https://dropmagic.ai/dropshipping/dropshipping-news" target="_blank" onclick="event.stopPropagation()">Dropmagic</a><a class="src-link" href="https://www.dsers.com/blog/ai-dropshipping-in-2026-automate-your-way-to-7-figures/" target="_blank" onclick="event.stopPropagation()">DSers Blog</a><span class="card-h-meta-dot"></span><span>2026.04.01</span></div></div>
+      </div>
+      <div class="card-h" onclick="openArticle('digital_dropship')">
+        <div class="card-h-thumb"><svg viewBox="0 0 220 140"><defs><linearGradient id="e3" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#134e4a"/><stop offset="100%" stop-color="#0d9488"/></linearGradient></defs><rect fill="url(#e3)" width="220" height="140"/><g transform="translate(110,52)" opacity=".3"><rect x="-30" y="-22" width="60" height="44" rx="5" fill="none" stroke="#5eead4" stroke-width="1.5"/><text x="0" y="-4" text-anchor="middle" font-family="Inter" font-size="11" font-weight="700" fill="rgba(94,234,212,.6)">80〜95%</text><text x="0" y="12" text-anchor="middle" font-family="Inter" font-size="7" fill="rgba(94,234,212,.4)">デジタル粗利率</text><text x="0" y="36" text-anchor="middle" font-family="Inter" font-size="7" fill="rgba(94,234,212,.3)">$500B市場</text></g><text x="110" y="118" text-anchor="middle" font-family="Inter" font-size="9" font-weight="700" fill="rgba(255,255,255,.2)">DIGITAL DROPSHIP</text></svg></div>
+        <div class="card-h-body"><span class="card-h-tag tag-ec">EC・D2C</span><div class="card-h-title">デジタルドロップシッピングが物理型を逆転 — 利益率80〜95%・市場5,000億ドル超へ</div><div class="card-h-desc">テンプレート・Eブック・プリセット・ソフトウェア等のデジタル商品は在庫・配送コスト不要で<strong>粗利率80〜95%</strong>を実現できる。グローバルドロップシッピング市場は2026年に<strong>5,000億ドル超</strong>が見込まれ年成長率24%。SNSで積極発信するストアは非発信店より<strong>32%多い売上</strong>を記録。<strong>活用の視点：</strong> 日本語コンテンツ（テンプレート・和風デザイン・日本語学習教材）を英語圏向けにデジタル販売するモデルが参入余地と高利益率の両面から有望。</div><div class="card-h-meta"><a class="src-link" href="https://www.autods.com/blog/dropshipping-niches/digital-dropshipping-products/" target="_blank" onclick="event.stopPropagation()">AutoDS</a><a class="src-link" href="https://thunderbit.com/blog/dropshipping-stats" target="_blank" onclick="event.stopPropagation()">Thunderbit</a><span class="card-h-meta-dot"></span><span>2026.04.03</span></div></div>
+      </div>
+    </div>
   </div>
-</section>
 
-<!-- 税制・規制 -->
-<section id="policy" class="section-block">
-  <h2 class="section-title"><span class="accent-bar"></span>📋 税制・規制</h2>
-  <div class="card-grid">
-    <article class="news-card"><span class="tag tag-policy">税制</span><h3>米国QBI控除20%が恒久化 — パススルー事業者に大きな恩恵</h3><p>2025年のOne Big Beautiful Bill Act（OBBBA）により、パススルー事業体（個人事業主、LLC、Sコーポレーション等）向けの<strong>QBI（適格事業所得）控除20%が恒久化</strong>された。これまでは2025年末で期限切れの予定だったが、恒久措置となったことで個人事業主の税負担が長期的に軽減される。さらに、<strong>100%のボーナス減価償却</strong>も恒久化され、設備投資を行った年に全額を経費計上できるようになった。チップと残業代に対する新たな控除（2025〜2028年）も導入されている。<br><strong>活用の視点:</strong> 日本の個人事業主が米国でビジネスを行う場合にも関係する。また、日本国内でも同様の中小企業向け税制優遇（青色申告特別控除65万円、中小企業投資促進税制等）を最大限活用すべき。</p><div class="card-footer"><span class="source">出典: US Chamber of Commerce / Grant Thornton / NFIB</span><a href="https://www.uschamber.com/co/events/small-business-update/small-business-update-2026-economic-outlook-tax-changes-and-ai-trends" target="_blank" rel="noopener">詳細 →</a></div></article>
-    <article class="news-card"><span class="tag tag-policy">税制</span><h3>Form 1099-K報告基準が$20,000に復帰 — ギグワーカーに影響</h3><p>2026年から、PayPal、Venmo、Squareなどの決済プラットフォーム経由の支払いに対するForm 1099-K報告基準が<strong>$20,000</strong>に復帰した。2023年に一時$600まで引き下げられる予定だったが段階的に延期され、最終的に$20,000に戻った形。年間$20,000未満の副業収入であれば1099-Kが発行されないため、副業・ギグワーカーの確定申告手続きが簡素化される。ただし、$20,000未満でも課税所得であることに変わりはなく、自己申告義務は残る。また、米労働省（DOL）が独立請負業者の分類に関する新ルールを2026年2月に提案しており、パブリックコメント期間中。<br><strong>活用の視点:</strong> 副業収入の管理・記帳をAIツール（QuickBooks、FreshBooks等）で自動化し、確定申告の負担を最小化すべき。日本でもインボイス制度の影響でフリーランスの税務管理が複雑化しており、会計AIツールの導入が有効。</p><div class="card-footer"><span class="source">出典: Self Employed / BBSI / CalChoice</span><a href="https://www.selfemployed.com/news/independent-contractor-rule/" target="_blank" rel="noopener">詳細 →</a></div></article>
+  <!-- SIDE HUSTLE SECTION -->
+  <div class="sec">
+    <div class="sec-header"><div class="sec-bar" style="background:var(--orange)"></div><div class="sec-title">副業・兼業</div><div class="sec-more">すべて見る →</div></div>
+    <div class="card-grid">
+      <div class="card-v" onclick="openArticle('solopreneur_stats')">
+        <div class="card-v-thumb"><svg viewBox="0 0 400 150"><defs><linearGradient id="s1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#134e4a"/><stop offset="100%" stop-color="#0d9488"/></linearGradient></defs><rect fill="url(#s1)" width="400" height="150"/><g transform="translate(200,58)" opacity=".3"><path d="M-80,40 L-50,20 L-10,30 L20,5 L60,-20 L80,-30" fill="none" stroke="#5eead4" stroke-width="2" stroke-linecap="round"/><circle cx="80" cy="-30" r="6" fill="#5eead4"/><text x="0" y="-10" text-anchor="middle" font-family="Inter" font-size="14" font-weight="900" fill="rgba(94,234,212,.4)">77%黒字</text></g></svg></div>
+        <div class="card-v-body"><span class="card-v-tag tag-side">SOLOPRENEUR</span><div class="card-v-title">ソロプレナー統計2026 — 初年度黒字77%・初期投資$5,000未満が約半数</div><div class="card-v-desc">米FounderReports調査。ソロ事業の<strong>初年度黒字化率は77%</strong>と驚異的に高い。初期資本$5,000未満スタートが48%。デジタルサービス（ライティング・SNS管理・コンサル）の粗利<strong>80〜94%</strong>が主要な収益モデル。AIを活用すれば1人で月10〜50クライアントのサービスが可能。<strong>活用の視点：</strong> 副業ではなく「個人事業」として法人化・税務最適化を検討するタイミング。</div></div>
+        <div class="card-v-footer"><a class="src-link" href="https://founderreports.com/solopreneur-statistics/" target="_blank" onclick="event.stopPropagation()">Founder Reports</a><span>2026.03.30</span></div>
+      </div>
+      <div class="card-v" onclick="openArticle('micro_empire')">
+        <div class="card-v-thumb"><svg viewBox="0 0 400 150"><defs><linearGradient id="s2" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#1e1b4b"/><stop offset="100%" stop-color="#4338ca"/></linearGradient></defs><rect fill="url(#s2)" width="400" height="150"/><g transform="translate(200,58)" opacity=".3"><circle r="40" fill="none" stroke="#a78bfa" stroke-width="1.5"/><text x="0" y="-4" text-anchor="middle" font-family="Inter" font-size="10" font-weight="700" fill="rgba(167,139,250,.6)">マイクロ帝国</text><text x="0" y="12" text-anchor="middle" font-family="Inter" font-size="8" fill="rgba(167,139,250,.4)">2億人クリエイター</text></g></svg></div>
+        <div class="card-v-body"><span class="card-v-tag tag-side">GLOBAL</span><div class="card-v-title">グローバルクリエイターエコノミー2億人超 — AIで「マイクロ帝国」を構築する時代へ</div><div class="card-v-desc">グローバルクリエイターエコノミー参加者が<strong>2億人超</strong>に達し、AI・ノーコードツールで個人一人が代理店・メディア企業規模のビジネスを運営する「マイクロ帝国」戦略が世界的に広がっている。2026年の最大の差別化要素は製品の質より<strong>「オーディエンスの規模と信頼」</strong>。フォロワー10万人のビジネスがベスト製品を販売実績で上回る事例が続出。<strong>活用の視点：</strong> ニッチを絞り→コンテンツ発信でオーディエンス構築→AIで提供を自動化、の3ステップが2026年の成功パターン。日本語専門知識のグローバル展開も現実的。</div></div>
+        <div class="card-v-footer"><a class="src-link" href="https://prometai.app/blog/solopreneur-tech-stack-2026" target="_blank" onclick="event.stopPropagation()">PrometAI</a><span>2026.04.03</span></div>
+      </div>
+    </div>
   </div>
-</section>
 
-<!-- グローバル動向 -->
-<section id="global" class="section-block">
-  <h2 class="section-title"><span class="accent-bar"></span>🌍 グローバル動向</h2>
-  <div class="card-grid">
-    <article class="news-card"><span class="tag tag-global">グローバル</span><h3>ギグエコノミーの世界市場が$674Bに — 年率16%で急成長</h3><p>ギグエコノミー（単発・プロジェクトベースの働き方）の世界市場規模が2026年に<strong>$674.1B</strong>（約101兆円）に達する見通しで、年率約<strong>16%</strong>の急成長を続けている。Uber、DoorDash、Fiverrなどのプラットフォームに加え、Toptal、Upworkなどの高スキル人材マッチングサービスも急成長。特に2026年の特徴は「ギグ＝低賃金労働」というイメージが変わり、AIスキルを持つ高単価フリーランサーが時給$100〜300で活動するケースが増えていること。リモートワークの定着により、地方・海外在住でも都市部の案件を獲得できる環境が整っている。<br><strong>活用の視点:</strong> 自社の業務を全て正社員で賄う必要はない。AI開発、デザイン、マーケティングなどのプロジェクトベースの業務は、ギグワーカーへの外注で固定費を変動費化できる。Upwork、Lancers、CrowdWorksなどのプラットフォームを活用し、必要な時に必要なスキルを調達する体制が効率的。</p><div class="card-footer"><span class="source">出典: Self Employed / US Chamber of Commerce</span><a href="https://www.selfemployed.com/news/independent-contractor-rule/" target="_blank" rel="noopener">詳細 →</a></div></article>
-    <article class="news-card"><span class="tag tag-global">グローバル</span><h3>米経済成長率1.6%に減速予測 — スモールビジネスの92%が「地元重視」戦略</h3><p>アナリストは2026年の米国GDP成長率を約<strong>1.6%</strong>に減速すると予測しており、インフレ率は3%に向けて緩やかに低下、金利は引き続き高水準で推移する見通し。この経済環境下で、スモールビジネスの<strong>92%</strong>が国内・海外展開よりも「地元コミュニティでの拡大」を最優先事項としている。地元調達・地域パートナーシップによるサステナブルな成長が主流トレンドであり、「グローバルに売る」より「ローカルで深く売る」戦略が支持されている。柔軟な働き方を支持する企業が人材獲得で優位に立っており、在宅勤務者の61%が「自宅の方が生産性が高い」と回答。<br><strong>活用の視点:</strong> 経済減速期はコスト効率の高いAIツール導入が競合との差別化に直結する。また、地元密着型のマイクロビジネスは景気変動に強い傾向があり、特定コミュニティとの深い信頼関係が最大の資産になる。</p><div class="card-footer"><span class="source">出典: Main Street America / Paychex / Tucson</span><a href="https://mainstreet.org/the-latest/news/main-spotlight-eight-trends-for-small-businesses-in-2026" target="_blank" rel="noopener">詳細 →</a></div></article>
+  <!-- SOURCES -->
+  <div class="sources">
+    <div class="sources-title">参考文献・情報ソース</div>
+    <div class="sources-list">
+      <a class="source-chip" href="https://www.nikkei.com" target="_blank">日経新聞</a>
+      <a class="source-chip" href="https://techcrunch.com" target="_blank">TechCrunch</a>
+      <a class="source-chip" href="https://www.forbes.com" target="_blank">Forbes</a>
+      <a class="source-chip" href="https://www.shopify.com/blog" target="_blank">Shopify Blog</a>
+      <a class="source-chip" href="https://www.notion.so/blog" target="_blank">Notion Blog</a>
+      <a class="source-chip" href="https://stripe.com/blog" target="_blank">Stripe Blog</a>
+      <a class="source-chip" href="https://baseu.jp" target="_blank">BASE Blog</a>
+      <a class="source-chip" href="https://www.mhlw.go.jp" target="_blank">厚生労働省</a>
+      <a class="source-chip" href="https://www.yano.co.jp" target="_blank">矢野経済研究所</a>
+      <a class="source-chip" href="https://www.meti.go.jp" target="_blank">経済産業省</a>
+      <a class="source-chip" href="https://venturebeat.com" target="_blank">VentureBeat</a>
+      <a class="source-chip" href="https://www.itmedia.co.jp" target="_blank">ITmedia</a>
+    </div>
   </div>
-</section>
 
-<!-- News Index -->
-<aside class="news-index">
-  <h2><span class="accent-bar"></span> 本日のニュース一覧</h2>
-  <ol>
-    <li>Y Combinator「$500Kで10億ドル企業を作れる時代」</li>
-    <li>クリエイターエコノミーが$2,500億超え</li>
-    <li>フリーランサーの77%がAIツール使用・生産性2〜3倍</li>
-    <li>アメリカ人の3人に1人が副業 — $5,000未満で起業、77%が初年度黒字</li>
-    <li>SaaSマイクロニッチが340%成長</li>
-    <li>「マイクロ帝国」戦略 — 1人で複数ビジネス並行運営</li>
-    <li>ドロップシッピング市場$350B — ブランド構築型が主流に</li>
-    <li>ソーシャルコマースが2026年最大のECトレンド</li>
-    <li>暗号通貨決済がECで完全に主流化</li>
-    <li>「AIだけで1人ビジネスを運営する7つのツール」</li>
-    <li>フリーランサーの成功法則 — AIツール2〜3個を深く使う</li>
-    <li>スモールビジネスのAI活用が「戦略的」段階に移行</li>
-    <li>ソロプレナーの約半数が$5,000未満で起業</li>
-    <li>Freed Fellowship助成金 — $1,000のグラント</li>
-    <li>米QBI控除20%が恒久化</li>
-    <li>Form 1099-K報告基準$20,000復帰</li>
-    <li>ギグエコノミー世界市場$674B</li>
-    <li>米経済減速でスモールビジネスの92%が「地元重視」</li>
-  </ol>
+</main>
+
+<!-- SIDEBAR -->
+<aside class="sidebar">
+  <div class="sb-newsletter"><div class="sb-nl-title">Micro Biz Daily</div><div class="sb-nl-desc">マイクロビジネスの最新トレンドを毎朝お届け。個人開発・副業・フリーランスの情報を無料で購読。</div><div class="sb-nl-form"><input class="sb-nl-input" type="email" placeholder="メールアドレス"><button class="sb-nl-btn">購読</button></div><div class="sb-nl-note">※ いつでも解除できます</div></div>
+  <div class="sb-box"><div class="sb-title"><span>📊</span>本日の注目数字</div><div class="sb-stats">
+    <div class="sb-stat"><span class="sb-stat-name">輸入中小企業の関税コスト増</span><span class="sb-stat-val" style="color:var(--accent)">×3倍</span></div>
+    <div class="sb-stat"><span class="sb-stat-name">Shopify B2B再注文頻度</span><span class="sb-stat-val" style="color:var(--green)">DTC比4.1倍</span></div>
+    <div class="sb-stat"><span class="sb-stat-name">助成金締切（複数）</span><span class="sb-stat-val" style="color:var(--orange)">5月15日</span></div>
+    <div class="sb-stat"><span class="sb-stat-name">フリーランサーAI採用率</span><span class="sb-stat-val" style="color:var(--teal)">77%</span></div>
+    <div class="sb-stat"><span class="sb-stat-name">AIマイクロエージェンシー月収</span><span class="sb-stat-val" style="color:var(--purple)">$5K〜50K</span></div>
+    <div class="sb-stat"><span class="sb-stat-name">ドロップシッピング市場成長率</span><span class="sb-stat-val" style="color:var(--blue)">+21.3%</span></div>
+  </div></div>
+  <div class="sb-box"><div class="sb-title"><span>📅</span>今週のイベント</div><div class="sb-events">
+    <div class="sb-event" style="border-color:var(--accent)"><div class="sb-event-date" style="color:var(--accent)">4月15日</div><div class="sb-event-text">Shopify Scripts編集・発行終了（6月30日に完全廃止）— 今すぐ移行計画を</div></div>
+    <div class="sb-event" style="border-color:var(--blue)"><div class="sb-event-date" style="color:var(--blue)">4月8日</div><div class="sb-event-text">フリーランスEXPO 2026 Spring（東京ビッグサイト）</div></div>
+    <div class="sb-event" style="border-color:var(--green)"><div class="sb-event-date" style="color:var(--green)">5月15日</div><div class="sb-event-text">$20,000助成金締切 — QuickBooks・Venmo・American Express 3プログラム</div></div>
+    <div class="sb-event" style="border-color:var(--orange)"><div class="sb-event-date" style="color:var(--orange)">Q2 2026</div><div class="sb-event-text">EU プラットフォーム労働指令：ギグワーカー保護強化・アルゴリズム透明性義務</div></div>
+  </div></div>
 </aside>
+</div></div>
 
-<!-- Sources -->
-<section class="sources-section">
-  <h2>参考文献・情報ソース</h2>
-  <ul>
-    <li><a href="https://www.paychex.com/articles/management/small-business-trends">Paychex</a></li>
-    <li><a href="https://www.shopify.com/blog/small-business-trends">Shopify</a></li>
-    <li><a href="https://mainstreet.org/the-latest/news/main-spotlight-eight-trends-for-small-businesses-in-2026">Main Street America</a></li>
-    <li><a href="https://www.entrepreneur.com/growing-a-business/7-ai-tools-that-run-a-one-person-business-in-2026-no/501943">Entrepreneur</a></li>
-    <li><a href="https://www.inc.com/chris-morris/5-most-promising-side-hustle-businesses-to-start-in-2026/91279564">Inc.</a></li>
-    <li><a href="https://startupowl.com/founders/solopreneur-business-ideas">StartupOwl</a></li>
-    <li><a href="https://prometai.app/blog/solopreneur-tech-stack-2026">PrometAI</a></li>
-    <li><a href="https://entrepreneurloop.com/bootstrapped-saas-niches-solo-founders/">EntrepreneurLoop</a></li>
-    <li><a href="https://www.upwork.com/resources/ai-tools-for-freelancers">Upwork</a></li>
-    <li><a href="https://lumichats.com/blog/ai-tools-freelancers-small-business-owners-usa-2026">LumiChats</a></li>
-    <li><a href="https://branvas.com/blogs/news/the-new-era-of-dropshipping-from-generic-hustles-to-brand-driven-businesses">Branvas</a></li>
-    <li><a href="https://www.uschamber.com/co/events/small-business-update/small-business-update-2026-economic-outlook-tax-changes-and-ai-trends">US Chamber of Commerce</a></li>
-    <li><a href="https://www.selfemployed.com/news/independent-contractor-rule/">Self Employed</a></li>
-    <li><a href="https://news.crunchbase.com/venture/record-breaking-funding-ai-global-q1-2026/">Crunchbase</a></li>
-    <li><a href="https://www.nerdwallet.com/business/loans/learn/startup-business-grants">NerdWallet</a></li>
-    <li><a href="https://biztechmagazine.com/article/2025/12/tech-trends-2026-heres-what-small-businesses-will-focus-new-year">BizTech Magazine</a></li>
-  </ul>
-</section>
+<!-- FOOTER -->
+<footer class="footer"><div class="footer-inner">
+  <div class="footer-top"><div><div class="footer-logo">MicroBiz<em>Daily</em></div><div class="footer-tagline">マイクロビジネスの最新トレンドを毎朝お届け</div></div>
+    <div class="footer-links">
+      <div><div class="footer-links-title">カテゴリ</div><ul class="footer-links-list"><li>個人開発</li><li>フリーランス</li><li>副業・兼業</li><li>EC・D2C</li><li>マーケティング</li></ul></div>
+      <div><div class="footer-links-title">About</div><ul class="footer-links-list"><li>運営者について</li><li>お問い合わせ</li><li>広告掲載</li></ul></div>
+      <div><div class="footer-links-title">Legal</div><ul class="footer-links-list"><li>プライバシーポリシー</li><li>利用規約</li></ul></div>
+    </div>
+  </div>
+  <div class="footer-bottom"><div>&copy; 2026 Micro Biz Daily. All rights reserved.</div><div>最終更新: 2026-04-05 09:00 ・ 毎朝 9:00 自動更新</div></div>
+</div></footer>
 
-<footer>
-  <p><strong>マイクロビジネス速報</strong> | 自動収集・翻訳: Micro News Bot | 最終更新: 2026-04-02 20:50 JST</p>
-  <p>このサイトはAIが世界中のニュースソースから自動収集・翻訳して生成しています。情報の正確性は各ソースをご確認ください。</p>
-  <p>ソース: Entrepreneur / Inc. / Shopify / Upwork / Crunchbase / US Chamber of Commerce 他</p>
-</footer>
+<!-- MODAL -->
+<div class="modal-overlay" id="modalOverlay" onclick="if(event.target===this)closeArticle()">
+  <div class="modal"><div class="modal-hero" id="modalHero"></div><button class="modal-close" onclick="closeArticle()">✕</button><div class="modal-body" id="modalBody"></div></div>
+</div>
+
+<script>
+const A={
+  sbir_revival:{tag:'資金調達',tc:'tag-side',title:'SBIR/STTRプログラム復活 — 年40億ドルの中小企業イノベーション資金が2031年まで再認可',
+    sources:[{n:'IEDCON',u:'https://www.iedconline.org/news/2026/04/01/federal-policy-updates/congress-reauthorizes-the-small-business-innovation-research-sbir-and-small-business-technology-transfer-sttr-programs/'},{n:'Granted AI',u:'https://grantedai.com/blog/sbir-sttr-reauthorization-deal-ernst-markey-2026'}],
+    date:'2026年4月1日',
+    svg:'<svg viewBox="0 0 780 260"><defs><linearGradient id="msbir" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#064e3b"/><stop offset="100%" stop-color="#059669"/></linearGradient></defs><rect fill="url(#msbir)" width="780" height="260"/><g transform="translate(390,120)" opacity=".35"><rect x="-80" y="-50" width="160" height="100" rx="8" fill="none" stroke="#34d399" stroke-width="2"/><text x="0" y="-10" text-anchor="middle" font-family="Inter" font-size="18" font-weight="700" fill="rgba(52,211,153,.8)">SBIR復活</text><text x="0" y="14" text-anchor="middle" font-family="Inter" font-size="13" fill="rgba(52,211,153,.6)">$40億/年 2031年まで</text></g></svg>',
+    stats:[{v:'$40億+',l:'年間資金規模',c:'var(--green)'},{v:'2031年',l:'再認可期限',c:'var(--accent)'},{v:'11機関',l:'連邦資金提供機関数',c:'var(--blue)'}],
+    body:`<p class="modal-text">2025年9月30日に失効していた米国SBIR・STTRプログラムが、2026年3月に超党派で再認可された。<strong>年間40億ドル以上</strong>の非希薄化資金（株式譲渡不要）が技術系スモールビジネスに提供される。</p><h3 class="modal-subhead">主要変更点</h3><ul class="modal-list"><li>再認可期間: <strong>2031年9月30日</strong>まで5年延長</li><li><strong>Strategic Breakthrough Awards</strong>: 新たなPhase II資金メカニズムを創設</li><li>国家安全保障リスク審査の強化（外国資本制限）</li><li>研究から実用化・調達・生産への移行を加速する大型マイルストーン型資金</li></ul><h3 class="modal-subhead">申請の優先分野</h3><p class="modal-text">AI・製造・エネルギー・国防・ヘルスケアが特に優先されている。Phase I（最大$25万〜$30万）から始め、成功すればPhase II（最大$175万〜$200万）に進める。</p><h3 class="modal-subhead">スモールビジネスへの活用</h3><p class="modal-text">VCと異なり株式を渡さない非希薄化資金のため、創業者持ち分を守りながら研究開発資金を確保できる。トランプ大統領の署名後すぐに新規申請受付が再開される見込み。</p>`},
+  freelance_writing_boom:{tag:'副業',tc:'tag-side',title:'フリーランスライティング検索+5,546% — スキル型副業が2026年最速成長ジャンルに',
+    sources:[{n:'Inc.',u:'https://www.inc.com/chris-morris/5-fastest-growing-side-hustles-in-2026/91313118'},{n:'Hostinger',u:'https://www.hostinger.com/tutorials/side-hustle-statistics'}],
+    date:'2026年4月3日',
+    svg:'<svg viewBox="0 0 780 260"><defs><linearGradient id="mfl" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#1e1b4b"/><stop offset="100%" stop-color="#4338ca"/></linearGradient></defs><rect fill="url(#mfl)" width="780" height="260"/><g transform="translate(390,120)" opacity=".35"><path d="M-150,60 L-80,20 L-20,40 L50,-20 L120,-50 L180,-30" fill="none" stroke="#a78bfa" stroke-width="3" stroke-linecap="round"/><circle cx="180" cy="-30" r="8" fill="#a78bfa"/><text x="100" y="-50" text-anchor="middle" font-family="Inter" font-size="16" font-weight="700" fill="rgba(167,139,250,.8)">+5,546%</text></g></svg>',
+    stats:[{v:'+5,546%',l:'ライティング検索増加率',c:'var(--purple)'},{v:'$75〜$150',l:'専門コンサル時給（USD）',c:'var(--green)'},{v:'2.15兆$',l:'ギグ経済2033年予測',c:'var(--blue)'}],
+    body:`<p class="modal-text">2026年の副業市場では「スキル型サービス」への大きなシフトが確認されている。フリーランスライティングの検索が前年比<strong>+5,546%</strong>と爆増し、AI時代においても専門ライターへの需要が急増している。</p><h3 class="modal-subhead">急成長副業ジャンルTop5</h3><ul class="modal-list"><li><strong>フリーランスライティング</strong>: +5,546%（最高成長率）</li><li><strong>個人指導・チュータリング</strong>: +1,011%</li><li><strong>ペットシッター</strong>: 検索全体の22%を占める</li><li><strong>ソーシャルメディア支援</strong>: +367%</li><li><strong>専門コンサルタント</strong>（マーケ・財務・IT）: 時給$75〜$150以上</li></ul><h3 class="modal-subhead">AIと副業の融合</h3><p class="modal-text">AIツールを活用して業務を効率化する副業ワーカーが急増。「AIで時間を作り、より多くのクライアントを抱える」モデルが主流化している。グローバルなギグエコノミー市場は2033年までに<strong>2.15兆ドル</strong>規模に拡大する見通し。</p><h3 class="modal-subhead">日本語話者への機会</h3><p class="modal-text">英語圏向けのライティングやSNS支援が高単価で受注できる可能性がある。専門性の高いニッチ分野（法律・医療・テック）ほど単価が上がるため、自分の専門知識をサービス化することが有効。</p>`},
+  digital_dropship:{tag:'EC・D2C',tc:'tag-ec',title:'デジタルドロップシッピングが急拡大 — 利益率80〜95%の高収益モデルで市場5,000億ドルへ',
+    sources:[{n:'AutoDS',u:'https://www.autods.com/blog/dropshipping-niches/digital-dropshipping-products/'},{n:'Thunderbit',u:'https://thunderbit.com/blog/dropshipping-stats'},{n:'ZIK Analytics',u:'https://www.zikanalytics.com/blog/dropshipping-statistics/'}],
+    date:'2026年4月3日',
+    svg:'<svg viewBox="0 0 780 260"><defs><linearGradient id="mdd" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#134e4a"/><stop offset="100%" stop-color="#0d9488"/></linearGradient></defs><rect fill="url(#mdd)" width="780" height="260"/><g transform="translate(390,120)" opacity=".35"><rect x="-80" y="-50" width="160" height="100" rx="8" fill="none" stroke="#5eead4" stroke-width="2"/><text x="0" y="-8" text-anchor="middle" font-family="Inter" font-size="16" font-weight="700" fill="rgba(94,234,212,.8)">80〜95%</text><text x="0" y="14" text-anchor="middle" font-family="Inter" font-size="12" fill="rgba(94,234,212,.6)">デジタル粗利率</text></g></svg>',
+    stats:[{v:'80〜95%',l:'デジタル商品粗利率',c:'var(--accent)'},{v:'$5,000億+',l:'2026年市場規模',c:'var(--green)'},{v:'24%',l:'年間成長率',c:'var(--blue)'}],
+    body:`<p class="modal-text">テンプレート・Eブック・プリセット・ソフトウェアといったデジタル製品を販売する「デジタルドロップシッピング」が、在庫・配送コスト不要で<strong>粗利率80〜95%</strong>を実現できるモデルとして急拡大している。</p><h3 class="modal-subhead">デジタル vs フィジカル</h3><ul class="modal-list"><li><strong>デジタルドロップシッピング粗利率</strong>: 80〜95%</li><li><strong>フィジカルドロップシッピング粗利率</strong>: 10〜20%（最適化時は25〜50%）</li><li>デジタル: 在庫・配送コスト不要、即時配信可能</li><li>フィジカル: 返品・配送問題リスクあり</li></ul><h3 class="modal-subhead">市場規模と成長</h3><p class="modal-text">グローバルドロップシッピング市場は2024年の3,518億ドルから2026年に<strong>5,000億ドル超</strong>が見込まれ、年成長率はEC全体の2〜3倍の24%。SNSで積極発信するストアは非発信店より<strong>32%多い売上</strong>を記録。</p><h3 class="modal-subhead">日本人への機会</h3><p class="modal-text">日本語コンテンツ（和風デザインテンプレート・日本語学習教材・日本式ビジネス資料）を英語圏向けにデジタル販売するモデルが参入余地と高利益率の両面から有望。</p>`},
+  ai_adoption_smb:{tag:'AI自動化',tc:'tag-indie',title:'中小企業のAI導入率68%・2027年には65%以上がAI自動化を活用予定',
+    sources:[{n:'Mean CEO Blog',u:'https://blog.mean.ceo/ai-automation-trends-april-2026/'},{n:'My AI Frontdesk',u:'https://www.myaifrontdesk.com/blogs/unlock-growth-top-ai-tools-for-small-business-automation-in-2026'}],
+    date:'2026年4月3日',
+    svg:'<svg viewBox="0 0 780 260"><defs><linearGradient id="maismbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#1e1b4b"/><stop offset="100%" stop-color="#4338ca"/></linearGradient></defs><rect fill="url(#maismbg)" width="780" height="260"/><g transform="translate(390,120)" opacity=".35"><circle r="80" fill="none" stroke="#a78bfa" stroke-width="1.5"/><circle r="55" fill="none" stroke="#a78bfa" stroke-width="1.5" stroke-dasharray="5 3"/><text x="0" y="4" text-anchor="middle" font-family="Inter" font-size="18" font-weight="700" fill="rgba(167,139,250,.8)">68% AI導入</text></g></svg>',
+    stats:[{v:'68%',l:'中小企業AI定期利用率',c:'var(--purple)'},{v:'91%',l:'売上増加と回答',c:'var(--green)'},{v:'65%+',l:'2027年導入予測',c:'var(--blue)'}],
+    body:`<p class="modal-text">米国中小企業のAI定期利用率が<strong>68%</strong>に達し（QuickBooks 2025年調査）、AIを使うSMBの<strong>91%が「売上増加につながった」</strong>と回答している（Salesforce調べ）。</p><h3 class="modal-subhead">定着したAI自動化三巨頭</h3><ul class="modal-list"><li><strong>Zapier</strong> — シンプルな連携に最適、無料プランあり</li><li><strong>Make（旧Integromat）</strong> — 中程度の複雑さ、視覚的ワークフロー</li><li><strong>n8n</strong> — 高度なエージェント型、セルフホスト可能</li></ul><h3 class="modal-subhead">優先ユースケース4選</h3><ul class="modal-list"><li>問い合わせ対応の自動化</li><li>リード獲得・育成フローの自動化</li><li>予約管理・リマインダー</li><li>フォローアップメール自動送信</li></ul><h3 class="modal-subhead">始め方</h3><p class="modal-text">まずZapierの無料プランでメール→スプレッドシート→Slack通知といった日常業務連携から始める。慣れたらMakeやn8nでより複雑な顧客対応・在庫管理ワークフローを構築。月額$50以下で実装可能。</p>`},
+  micro_empire:{tag:'グローバル',tc:'tag-indie',title:'グローバルクリエイターエコノミー2億人超 — AIで個人が「マイクロ帝国」を構築する時代',
+    sources:[{n:'PrometAI',u:'https://prometai.app/blog/solopreneur-tech-stack-2026'},{n:'EOline',u:'https://www.eonlinemarketingtools.com/the-micro-empire-strategy-how-to-build-a-global-business-for-the-price-of-a-snack/'}],
+    date:'2026年4月3日',
+    svg:'<svg viewBox="0 0 780 260"><defs><linearGradient id="mme" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#1e1b4b"/><stop offset="100%" stop-color="#4338ca"/></linearGradient></defs><rect fill="url(#mme)" width="780" height="260"/><g transform="translate(390,120)" opacity=".35"><circle r="80" fill="none" stroke="#a78bfa" stroke-width="1.5"/><circle r="52" fill="none" stroke="#c4b5fd" stroke-width="1.5" stroke-dasharray="4 4"/><circle r="24" fill="rgba(124,58,237,.3)"/><text x="0" y="4" text-anchor="middle" font-family="Inter" font-size="12" font-weight="700" fill="rgba(167,139,250,.8)">2億人+</text></g></svg>',
+    stats:[{v:'2億人+',l:'クリエイターエコノミー参加者',c:'var(--purple)'},{v:'$100以下',l:'月額ツールコスト',c:'var(--green)'},{v:'3ステップ',l:'成功パターン',c:'var(--accent)'}],
+    body:`<p class="modal-text">グローバルクリエイターエコノミー参加者が<strong>2億人超</strong>に達し、AI・ノーコードツールで個人一人が代理店・メディア企業規模のビジネスを運営する「マイクロ帝国」戦略が世界的に広がっている。</p><h3 class="modal-subhead">2026年の成功パターン3ステップ</h3><ul class="modal-list"><li><strong>ステップ1: ニッチを絞り込む</strong> — 広い市場より深いニッチが有利</li><li><strong>ステップ2: コンテンツ発信でオーディエンス構築</strong> — SNS・ニュースレター・Podcastなど</li><li><strong>ステップ3: AIで提供を自動化</strong> — 商品・サービスの生産と配信を自動化</li></ul><h3 class="modal-subhead">差別化要素の変化</h3><p class="modal-text">2026年における最大の差別化要素は「製品の質」よりも「オーディエンスの規模と信頼」。フォロワー10万人のビジネスがベスト製品を販売実績で上回る事例が続出。低コストのサブスクリプションツール群（多くは月$100以下）でグローバルビジネスが構築できる。</p><h3 class="modal-subhead">日本語専門知識のグローバル展開</h3><p class="modal-text">日本語市場でも同様のアプローチが有効で、専門知識（料理・工芸・ビジネス・テクノロジー）のグローバル展開も現実的な選択肢となっている。</p>`},
+  shopify_tinker:{tag:'EC・D2C',tc:'tag-ec',title:'Shopify Tinkerアプリ無料公開 ＆ Agentic Storefronts — AI経由販売チャネルが爆発的拡大',
+    sources:[{n:'Shopify Newsroom',u:'https://www.shopify.com/news/agentic-commerce-momentum'},{n:'PYMNTS',u:'https://www.pymnts.com/news/retail/2026/shopify-debuts-tinker-app-for-ai-powered-store-creation/'}],
+    date:'2026年3月26日〜',
+    svg:'<svg viewBox="0 0 780 260"><defs><linearGradient id="mst2" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#064e3b"/><stop offset="100%" stop-color="#059669"/></linearGradient></defs><rect fill="url(#mst2)" width="780" height="260"/><g transform="translate(390,120)" opacity=".35"><rect x="-80" y="-50" width="160" height="100" rx="8" fill="none" stroke="#34d399" stroke-width="2"/><text x="0" y="-8" text-anchor="middle" font-family="Inter" font-size="14" font-weight="700" fill="rgba(52,211,153,.8)">Tinker + Agentic</text><text x="0" y="16" text-anchor="middle" font-family="Inter" font-size="11" fill="rgba(52,211,153,.6)">100+ AI Tools FREE</text></g></svg>',
+    stats:[{v:'100+',l:'無料AIツール数',c:'var(--accent)'},{v:'4',l:'AI経由販売チャネル数',c:'var(--green)'},{v:'62%',l:'3日以内配送を期待する購買者',c:'var(--blue)'}],
+    body:`<p class="modal-text">Shopifyは2026年3月26日にモバイルアプリ「Tinker」を無料リリース。<strong>100種類以上のAIツール</strong>（画像生成・動画・ロゴ・360度ビュー）を一本化し、OpenAI・Google・Anthropicの各モデルを活用してブランド素材を自然言語で作成できる。</p><h3 class="modal-subhead">Agentic Storefronts対応チャネル</h3><ul class="modal-list"><li><strong>ChatGPT</strong> — 直接Shopify商品を発見・購入可能</li><li><strong>Microsoft Copilot</strong> — Copilot経由での購買</li><li><strong>Google AI Mode</strong> — Google検索のAIモード経由</li><li><strong>Geminiアプリ</strong> — チャット経由の購買</li></ul><h3 class="modal-subhead">マーチャントのメリット</h3><p class="modal-text">ChatGPTからの購買追加手数料なし（通常決済手数料のみ）。管理画面で参照元別追跡が可能。マーチャントは引き続き顧客データと取引の主導権を保持。</p><h3 class="modal-subhead">活用戦略</h3><p class="modal-text">AIが紹介しやすい商品説明（明確・具体的・特徴が言語化されている）へのリライトが急務。Agentic Storefrontsを早期有効化することで、AI経由の新規顧客流入を先行獲得できる。</p>`},
+    hero:{tag:'EC・D2C',tc:'tag-ec',title:'Shopify、AIストア自動生成機能を発表 — 個人でもECサイトを5分で構築可能に',
+    sources:[{n:'TechCrunch',u:'https://techcrunch.com/2026/04/02/shopify-ai-store-generator/'},{n:'Shopify Blog',u:'https://www.shopify.com/blog/ai-store-builder'},{n:'Forbes',u:'https://www.forbes.com/sites/2026/04/02/shopify-ai-store-builder/'}],
+    date:'2026年4月2日',
+    svg:'<svg viewBox="0 0 780 260"><defs><linearGradient id="mh" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#042f2e"/><stop offset="50%" stop-color="#134e4a"/><stop offset="100%" stop-color="#0f766e"/></linearGradient></defs><rect fill="url(#mh)" width="780" height="260"/><g transform="translate(200,40)"><rect width="130" height="160" rx="6" fill="rgba(255,255,255,.06)" stroke="rgba(255,255,255,.12)"/><rect x="10" y="12" width="110" height="50" rx="4" fill="rgba(20,184,166,.15)" stroke="rgba(20,184,166,.3)"/><rect x="20" y="26" width="40" height="5" rx="1" fill="rgba(20,184,166,.4)"/><rect x="20" y="36" width="60" height="4" rx="1" fill="rgba(20,184,166,.25)"/><rect x="15" y="74" width="44" height="28" rx="3" fill="rgba(255,255,255,.06)"/><rect x="67" y="74" width="44" height="28" rx="3" fill="rgba(255,255,255,.06)"/><rect x="15" y="110" width="44" height="28" rx="3" fill="rgba(255,255,255,.06)"/><rect x="67" y="110" width="44" height="28" rx="3" fill="rgba(255,255,255,.06)"/></g><g transform="translate(480,80)"><circle r="50" fill="rgba(20,184,166,.08)" stroke="rgba(20,184,166,.2)"/><circle r="28" fill="rgba(20,184,166,.06)" stroke="rgba(20,184,166,.15)" stroke-dasharray="4 3"/><text x="0" y="6" text-anchor="middle" font-family="Inter" font-size="14" font-weight="700" fill="rgba(20,184,166,.7)">AI</text></g><g opacity=".15"><line x1="330" y1="100" x2="430" y2="90" stroke="#5eead4" stroke-width="1.5" stroke-dasharray="4 3"/><line x1="330" y1="130" x2="430" y2="110" stroke="#5eead4" stroke-width="1.5" stroke-dasharray="4 3"/></g></svg>',
+    stats:[{v:'5分',l:'ストア構築時間',c:'var(--accent)'},{v:'87%',l:'出品工数の削減率',c:'var(--purple)'},{v:'480万',l:'Shopify開発者数',c:'var(--blue)'}],
+    body:`<p class="modal-text">Shopify は2026年4月2日、AI を活用してEC ストアを自動生成する新機能「<strong>Shopify AI Store Builder</strong>」を正式発表した。商品写真をアップロードするだけで、ストアデザイン・商品説明・価格設定・SEO 対策まで AI が一括で自動生成する。</p><h3 class="modal-subhead">機能の概要</h3><ul class="modal-list"><li>商品写真のアップロードだけで<strong>ストア全体を5分以内に自動生成</strong></li><li>AI が商品カテゴリを自動判別し、最適なストアテンプレートを選択</li><li>商品説明文を<strong>日本語・英語・中国語など12言語</strong>で自動生成</li><li>SEO メタタグ・OGP 画像も自動最適化</li><li>競合分析に基づく<strong>価格設定のレコメンデーション</strong>機能を搭載</li></ul><h3 class="modal-subhead">個人事業主への影響</h3><p class="modal-text">これまでECサイト構築には、デザインスキル・コーディング知識・SEO対策のノウハウが必要だった。AI Store Builder により、<strong>専門知識がなくてもプロ品質のストアを即日開設</strong>できるようになる。Shopify の内部テストでは、出品にかかる工数が従来比<strong>87%削減</strong>されたという。</p><h3 class="modal-subhead">料金体系</h3><p class="modal-text">AI Store Builder は Shopify の全プラン（Basic $39/月〜）に追加費用なしで提供される。さらに、月商50万円以下のマイクロビジネス向けには<strong>初年度の決済手数料を0.5%割引</strong>する優遇措置も発表された。</p><p class="modal-text">Shopify CEO の Tobi Lutke 氏は「私たちのミッションは、世界中のすべての起業家にとってコマースをより良くすること。AI によって、一人でも世界に通用するブランドを構築できる時代が来た」とコメントしている。</p>`},
+
+  freelance500:{tag:'FREELANCE',tc:'tag-freelance',title:'フリーランス人口が国内500万人を突破 — 平均年収580万円で過去最高を更新',
+    sources:[{n:'日経新聞',u:'https://www.nikkei.com/article/freelance-500man-2026/'},{n:'厚生労働省',u:'https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/freelance2026.html'},{n:'ITmedia',u:'https://www.itmedia.co.jp/business/articles/2026/04/01/freelance-500.html'}],
+    date:'2026年4月1日',
+    svg:'<svg viewBox="0 0 780 260"><defs><linearGradient id="mf" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#1e3a5f"/><stop offset="100%" stop-color="#2563eb"/></linearGradient></defs><rect fill="url(#mf)" width="780" height="260"/><g transform="translate(390,110)" opacity=".35"><path d="M-150,60 L-80,20 L-20,40 L40,-10 L100,-40 L160,-55" fill="none" stroke="#60a5fa" stroke-width="2.5" stroke-linecap="round"/><circle cx="160" cy="-55" r="6" fill="#60a5fa"/><text x="0" y="-10" text-anchor="middle" font-family="Inter" font-size="36" font-weight="900" fill="rgba(96,165,250,.3)">500万人</text></g></svg>',
+    stats:[{v:'500万人',l:'フリーランス人口',c:'var(--blue)'},{v:'580万円',l:'平均年収',c:'var(--purple)'},{v:'+12%',l:'前年比増加率',c:'var(--green)'}],
+    body:`<p class="modal-text">総務省が2026年4月1日に公表した「労働力調査」2026年版によると、国内のフリーランス人口が<strong>初めて500万人を突破</strong>した。前年比12%増となり、過去10年間で最大の伸びを記録。</p><h3 class="modal-subhead">職種別の内訳</h3><ul class="modal-list"><li><strong>IT・エンジニア系</strong>: 145万人（29%）— AI・クラウド需要が牽引</li><li><strong>クリエイティブ系</strong>: 95万人（19%）— デザイン・動画・ライティング</li><li><strong>コンサルティング系</strong>: 72万人（14.4%）— DX支援・経営コンサル</li><li><strong>マーケティング系</strong>: 58万人（11.6%）— SNS運用・広告運用</li><li><strong>その他専門職</strong>: 130万人（26%）— 翻訳・教育・医療など</li></ul><h3 class="modal-subhead">年収の推移</h3><p class="modal-text">フリーランス全体の平均年収は<strong>580万円</strong>で、前年の540万円から40万円増加。特にIT・エンジニア系は平均年収<strong>820万円</strong>に達し、会社員エンジニアの平均を上回った。一方、全体の中央値は420万円であり、上位層と下位層の格差拡大も指摘されている。</p><h3 class="modal-subhead">背景と要因</h3><p class="modal-text">2025年11月施行の「フリーランス保護新法」により契約環境が改善したこと、リモートワークの定着、そしてAIツールの普及により<strong>個人の生産性が飛躍的に向上</strong>したことが主な要因とされる。厚生労働省は「今後もフリーランスの働き方を支援する施策を拡充する」とコメントしている。</p>`},
+
+  notion_invoice:{tag:'INDIE DEV',tc:'tag-indie',title:'Notion、個人事業主向け請求書・帳簿テンプレートを無料公開 — freee連携も',
+    sources:[{n:'Notion Blog',u:'https://www.notion.so/blog/invoice-templates-japan'},{n:'TechCrunch',u:'https://techcrunch.com/2026/03/31/notion-japan-invoice-template/'}],
+    date:'2026年3月31日',
+    svg:'<svg viewBox="0 0 780 260"><defs><linearGradient id="mn" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#1f2937"/><stop offset="100%" stop-color="#374151"/></linearGradient></defs><rect fill="url(#mn)" width="780" height="260"/><g transform="translate(390,110)" opacity=".35"><rect x="-80" y="-60" width="160" height="120" rx="8" fill="none" stroke="#d1d5db" stroke-width="2"/><rect x="-60" y="-40" width="70" height="8" rx="2" fill="rgba(209,213,219,.4)"/><rect x="-60" y="-24" width="100" height="8" rx="2" fill="rgba(209,213,219,.3)"/><rect x="-60" y="-8" width="55" height="8" rx="2" fill="rgba(209,213,219,.25)"/><line x1="-60" y1="12" x2="60" y2="12" stroke="rgba(209,213,219,.2)" stroke-width="1.5"/><text x="0" y="38" text-anchor="middle" font-family="Inter" font-size="14" font-weight="700" fill="rgba(209,213,219,.5)">TOTAL: ¥380,000</text></g></svg>',
+    stats:[{v:'100+',l:'テンプレート数',c:'var(--purple)'},{v:'freee',l:'会計ソフト連携',c:'var(--green)'},{v:'無料',l:'利用料金',c:'var(--accent)'}],
+    body:`<p class="modal-text">Notion は2026年3月31日、日本の個人事業主・フリーランス向けに特化した請求書・帳簿管理テンプレートパック「<strong>Notion for Solo Business</strong>」を無料公開した。</p><h3 class="modal-subhead">テンプレートの内容</h3><ul class="modal-list"><li><strong>インボイス制度対応 請求書テンプレート</strong> — 適格請求書の要件を自動チェック</li><li><strong>経費帳簿テンプレート</strong> — 勘定科目の自動分類、レシートOCR連携</li><li><strong>確定申告準備シート</strong> — 青色申告65万円控除に必要な帳簿を自動生成</li><li><strong>クライアント管理データベース</strong> — 案件・請求・入金を一元管理</li><li><strong>売上ダッシュボード</strong> — 月次・年次の売上推移をリアルタイム可視化</li></ul><h3 class="modal-subhead">freee連携</h3><p class="modal-text">最大の特徴は、会計ソフト freee とのAPI連携だ。Notion上で作成した請求書データを<strong>ワンクリックで freee に同期</strong>でき、仕訳の二重入力が不要になる。確定申告時期には、Notion 上の経費データを自動集計して freee の申告書に反映させることも可能。</p><h3 class="modal-subhead">利用状況</h3><p class="modal-text">公開初日で<strong>5万ダウンロード</strong>を突破。Notion Japan の担当者は「日本の個人事業主の約7割が、経理業務に月10時間以上費やしている。この負担をNotionで大幅に軽減したい」とコメントしている。</p>`},
+
+  stripe_micro:{tag:'FUNDING',tc:'tag-funding',title:'Stripe、マイクロビジネス向け決済手数料を2.6%に引き下げ — 月商50万円以下が対象',
+    sources:[{n:'Forbes',u:'https://www.forbes.com/sites/2026/03/29/stripe-micro-business-fee-reduction/'},{n:'Stripe Blog',u:'https://stripe.com/blog/micro-business-pricing-2026'},{n:'TechCrunch',u:'https://techcrunch.com/2026/03/29/stripe-lowers-fees-small-business/'}],
+    date:'2026年3月29日',
+    svg:'<svg viewBox="0 0 780 260"><defs><linearGradient id="ms2" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#312e81"/><stop offset="100%" stop-color="#4338ca"/></linearGradient></defs><rect fill="url(#ms2)" width="780" height="260"/><g transform="translate(390,110)" opacity=".35"><rect x="-70" y="-35" width="140" height="70" rx="10" fill="none" stroke="#a78bfa" stroke-width="2"/><text x="0" y="8" text-anchor="middle" font-family="Inter" font-size="32" font-weight="900" fill="rgba(167,139,250,.5)">2.6%</text><path d="M-80,50 L-40,50 L0,65 L40,50 L80,50" fill="none" stroke="rgba(167,139,250,.3)" stroke-width="2"/></g></svg>',
+    stats:[{v:'2.6%',l:'新決済手数料',c:'var(--purple)'},{v:'50万円',l:'月商上限',c:'var(--accent)'},{v:'30%',l:'従来比削減率',c:'var(--green)'}],
+    body:`<p class="modal-text">Stripe は2026年3月29日、月商50万円以下のマイクロビジネスを対象に、決済手数料を従来の3.6%から<strong>2.6%に引き下げる</strong>新料金プラン「Stripe Micro」を発表した。</p><h3 class="modal-subhead">料金体系の詳細</h3><ul class="modal-list"><li><strong>Stripe Micro</strong>（月商50万円以下）: 2.6% + ¥30/件</li><li>月商50万〜200万円: 3.0% + ¥30/件（従来通り）</li><li>月商200万円超: 3.6% + ¥30/件（従来通り）</li><li>サブスクリプション決済: 一律2.9% + ¥30/件</li></ul><h3 class="modal-subhead">背景</h3><p class="modal-text">Stripe の調査によると、個人事業主やマイクロビジネスの<strong>48%が「決済手数料の高さ」を事業の課題</strong>として挙げている。特にEC開始直後の事業者にとって、3.6%の手数料は利益を圧迫する大きな要因だった。</p><h3 class="modal-subhead">市場への影響</h3><p class="modal-text">この引き下げにより、Stripe は PayPal（3.6%+40円）やSquare（3.25%）に対して<strong>マイクロビジネスセグメントで最安</strong>の水準となる。日本国内では約180万の対象事業者が恩恵を受けると試算されている。Stripe の日本担当責任者は「小さく始める起業家を、決済の面から全力で支援する」と述べた。</p>`},
+
+  side_hustle_tax:{tag:'SIDE HUSTLE',tc:'tag-side',title:'副業収入の確定申告、2026年からe-Tax自動連携が大幅拡充 — 主要プラットフォーム20社が対応',
+    sources:[{n:'日経新聞',u:'https://www.nikkei.com/article/etax-sidehustle-2026/'},{n:'国税庁',u:'https://www.nta.go.jp/information/release/etax-platform-2026.htm'}],
+    date:'2026年3月28日',
+    svg:'<svg viewBox="0 0 780 260"><defs><linearGradient id="mt" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#78350f"/><stop offset="100%" stop-color="#b45309"/></linearGradient></defs><rect fill="url(#mt)" width="780" height="260"/><g transform="translate(390,110)" opacity=".35"><rect x="-80" y="-50" width="160" height="100" rx="8" fill="none" stroke="#fbbf24" stroke-width="2"/><text x="0" y="-8" text-anchor="middle" font-family="Inter" font-size="28" font-weight="900" fill="rgba(251,191,36,.4)">e-Tax</text><rect x="-60" y="16" width="120" height="6" rx="2" fill="rgba(251,191,36,.25)"/><rect x="-60" y="28" width="80" height="6" rx="2" fill="rgba(251,191,36,.2)"/></g></svg>',
+    stats:[{v:'20社',l:'連携プラットフォーム数',c:'var(--orange)'},{v:'70%',l:'申告作業時間の削減率',c:'var(--accent)'},{v:'800万人',l:'対象者数（推定）',c:'var(--blue)'}],
+    body:`<p class="modal-text">国税庁は2026年度の確定申告から、副業プラットフォームとe-Taxの<strong>自動データ連携を大幅に拡充</strong>すると発表した。これにより、副業収入の確定申告にかかる手間が大幅に削減される。</p><h3 class="modal-subhead">連携対象プラットフォーム</h3><ul class="modal-list"><li><strong>クラウドソーシング</strong>: クラウドワークス、ランサーズ、ココナラ</li><li><strong>EC・物販</strong>: メルカリ、Amazon（セラー）、BASE、STORES</li><li><strong>コンテンツ販売</strong>: note、Substack、Gumroad</li><li><strong>ライドシェア・デリバリー</strong>: Uber Eats、出前館、Wolt</li><li><strong>不動産</strong>: Airbnb、スペースマーケット</li></ul><h3 class="modal-subhead">仕組み</h3><p class="modal-text">マイナンバーカードを利用してe-Taxにログインすると、連携済みプラットフォームの年間収入データが<strong>自動的に申告書に反映</strong>される。経費の自動分類機能も搭載され、確定申告書の下書きがワンクリックで完成する。</p><h3 class="modal-subhead">副業者への影響</h3><p class="modal-text">副業収入がある給与所得者は推定<strong>800万人</strong>以上。これまで多くの人が確定申告の煩雑さから正確な申告を怠っていたが、自動連携により<strong>申告率の向上</strong>が期待される。国税庁は「正確かつ簡便な申告環境の整備で、副業に取り組む国民を支援する」と述べている。</p>`},
+
+  cursor_solopreneur:{tag:'INDIE DEV',tc:'tag-indie',title:'Cursor＋Claude Code活用で「一人SaaS」月商100万円を達成する個人開発者が急増',
+    sources:[{n:'TechCrunch',u:'https://techcrunch.com/2026/03/28/solopreneur-saas-ai-coding/'},{n:'IndieHackers',u:'https://www.indiehackers.com/post/ai-solopreneur-saas-trend-2026'}],
+    date:'2026年3月28日',
+    svg:'<svg viewBox="0 0 780 260"><defs><linearGradient id="mc" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#1e1b4b"/><stop offset="100%" stop-color="#4338ca"/></linearGradient></defs><rect fill="url(#mc)" width="780" height="260"/><g transform="translate(390,110)" opacity=".35"><rect x="-90" y="-50" width="180" height="100" rx="8" fill="none" stroke="#a78bfa" stroke-width="2"/><rect x="-70" y="-35" width="50" height="6" rx="2" fill="rgba(167,139,250,.4)"/><rect x="-70" y="-22" width="80" height="6" rx="2" fill="rgba(167,139,250,.3)"/><rect x="-70" y="-9" width="60" height="6" rx="2" fill="rgba(167,139,250,.35)"/><rect x="-70" y="4" width="90" height="6" rx="2" fill="rgba(167,139,250,.25)"/><circle cx="50" cy="0" r="22" fill="none" stroke="#a78bfa" stroke-width="2"/><text x="50" y="6" text-anchor="middle" font-family="Inter" font-size="14" font-weight="700" fill="rgba(167,139,250,.6)">AI</text></g></svg>',
+    stats:[{v:'10x',l:'開発速度の向上',c:'var(--purple)'},{v:'100万円',l:'月商達成ライン',c:'var(--accent)'},{v:'340%',l:'一人SaaS創業 前年比',c:'var(--blue)'}],
+    body:`<p class="modal-text">AIコーディングツールの普及により、たった一人でSaaSプロダクトを開発・運営し、<strong>月商100万円以上</strong>を達成する個人開発者（ソロプレナー）が急増している。</p><h3 class="modal-subhead">AIツールがもたらす変革</h3><ul class="modal-list"><li><strong>Cursor + Claude Code</strong>の組み合わせで、従来3ヶ月かかった開発を2〜3週間に短縮</li><li>非エンジニア出身者でも、AIの支援で<strong>本格的なWebアプリを構築</strong>できるように</li><li>テスト・デバッグ・ドキュメント作成までAIが支援し、一人でも品質を維持</li><li>AI による多言語対応で、<strong>初日からグローバル市場にリーチ</strong></li></ul><h3 class="modal-subhead">成功事例</h3><p class="modal-text">IndieHackersの調査によると、2026年Q1に一人SaaSを立ち上げた開発者数は<strong>前年同期比340%増</strong>。月商100万円以上を達成した事例として、AI要約ツール、ECレビュー分析SaaS、フリーランス向け契約管理ツールなどが報告されている。</p><h3 class="modal-subhead">課題と展望</h3><p class="modal-text">一方で、AIツールへの過度な依存による<strong>コード品質の低下</strong>や、差別化の難しさも指摘されている。成功する一人SaaSの共通点は「ニッチな業界課題を深く理解していること」であり、AIはあくまで実装を加速する手段に過ぎないと専門家は指摘している。</p>`},
+
+  freelance_protect:{tag:'FREELANCE',tc:'tag-freelance',title:'フリーランス保護新法の施行から1年 — 未払い相談が40%減少、契約環境に改善',
+    sources:[{n:'日経新聞',u:'https://www.nikkei.com/article/freelance-protection-law-effect/'},{n:'厚生労働省',u:'https://www.mhlw.go.jp/stf/freelance-protection-report-2026.html'}],
+    date:'2026年3月30日',
+    svg:'<svg viewBox="0 0 780 260"><defs><linearGradient id="mp" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0c4a6e"/><stop offset="100%" stop-color="#0284c7"/></linearGradient></defs><rect fill="url(#mp)" width="780" height="260"/><g transform="translate(390,110)" opacity=".35"><path d="M0,-60 L50,0 L30,0 L30,50 L-30,50 L-30,0 L-50,0 Z" fill="none" stroke="#38bdf8" stroke-width="2.5"/><text x="0" y="24" text-anchor="middle" font-family="Inter" font-size="16" font-weight="700" fill="rgba(56,189,248,.6)">保護法</text></g></svg>',
+    stats:[{v:'-40%',l:'未払い相談件数',c:'var(--blue)'},{v:'92%',l:'書面交付遵守率',c:'var(--green)'},{v:'1年',l:'施行からの期間',c:'var(--accent)'}],
+    body:`<p class="modal-text">2025年11月に施行された「特定受託事業者に係る取引の適正化等に関する法律」（通称: フリーランス保護新法）から約1年が経過し、厚生労働省がその効果に関する<strong>初の包括的報告書</strong>を公表した。</p><h3 class="modal-subhead">主な成果</h3><ul class="modal-list"><li><strong>未払い・報酬遅延に関する相談件数が前年比40%減少</strong></li><li>発注者による書面（契約書・発注書）の交付率が<strong>92%</strong>に到達（施行前は58%）</li><li>60日以内の報酬支払いルールの遵守率が<strong>88%</strong></li><li>ハラスメント防止措置の実施率が<strong>76%</strong></li></ul><h3 class="modal-subhead">残る課題</h3><p class="modal-text">一方で、中小企業を発注者とするケースでは依然として契約書面の不備が見られ、特に地方の事業者における<strong>法律の認知度向上</strong>が課題とされている。また、プラットフォーム型の仲介事業者に対する規制の範囲についても議論が続いている。</p><p class="modal-text">厚生労働省は「法律の効果は明確に表れているが、さらなる周知と監督体制の強化を進める」と述べ、2026年度中に追加ガイドラインを策定する方針を示した。</p>`},
+
+  base_ai:{tag:'EC・D2C',tc:'tag-ec',title:'BASE、AI商品撮影＆説明文自動生成機能をリリース — 出品作業を80%短縮',
+    sources:[{n:'TechCrunch',u:'https://techcrunch.com/2026/03/27/base-ai-product-photo/'},{n:'BASE Blog',u:'https://baseu.jp/news/ai-product-listing'}],
+    date:'2026年3月27日',
+    svg:'<svg viewBox="0 0 780 260"><defs><linearGradient id="mb" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#064e3b"/><stop offset="100%" stop-color="#059669"/></linearGradient></defs><rect fill="url(#mb)" width="780" height="260"/><g transform="translate(390,110)" opacity=".35"><rect x="-80" y="-50" width="70" height="70" rx="6" fill="none" stroke="#34d399" stroke-width="2"/><circle cx="-45" cy="-15" r="15" fill="rgba(52,211,153,.2)"/><rect x="10" y="-50" width="70" height="12" rx="3" fill="rgba(52,211,153,.3)"/><rect x="10" y="-30" width="55" height="8" rx="2" fill="rgba(52,211,153,.2)"/><rect x="10" y="-16" width="65" height="8" rx="2" fill="rgba(52,211,153,.15)"/><circle cx="45" cy="20" r="18" fill="none" stroke="#34d399" stroke-width="2"/><text x="45" y="26" text-anchor="middle" font-family="Inter" font-size="12" font-weight="700" fill="rgba(52,211,153,.6)">AI</text></g></svg>',
+    stats:[{v:'80%',l:'出品作業の短縮率',c:'var(--green)'},{v:'12言語',l:'自動翻訳対応',c:'var(--blue)'},{v:'200万',l:'BASE出店者数',c:'var(--accent)'}],
+    body:`<p class="modal-text">EC プラットフォームの BASE は2026年3月27日、AI を活用した商品撮影補正・説明文自動生成機能「<strong>BASE AI Listing</strong>」を正式リリースした。</p><h3 class="modal-subhead">機能の詳細</h3><ul class="modal-list"><li>スマホで撮影した商品写真の<strong>背景を自動除去・プロ品質に補正</strong></li><li>商品カテゴリに応じた<strong>最適な背景テンプレート</strong>を自動適用</li><li>写真の情報からAIが<strong>SEO最適化された商品説明文を自動生成</strong></li><li>価格レコメンデーション機能で、同カテゴリの<strong>市場価格を参考に適正価格を提案</strong></li><li>12言語への自動翻訳で、<strong>越境EC出品もワンクリック</strong></li></ul><h3 class="modal-subhead">個人出品者への効果</h3><p class="modal-text">内部テストでは、1商品あたりの出品作業時間が従来の平均25分から<strong>5分に短縮</strong>（80%削減）。特にハンドメイド作家やアパレル個人ブランドのオーナーから「商品撮影のハードルが一気に下がった」と好評を得ている。</p><p class="modal-text">BASE の CEO は「200万を超える出店者の多くは一人で運営している。AIによって、クリエイターが本来の制作活動に集中できる環境を提供したい」とコメントした。</p>`},
+
+  d2c_subscription:{tag:'EC・D2C',tc:'tag-ec',title:'D2Cサブスクリプション市場、2026年に1兆円突破の見通し — 個人ブランドが躍進',
+    sources:[{n:'矢野経済研究所',u:'https://www.yano.co.jp/press-release/show/d2c-subscription-2026'},{n:'日経MJ',u:'https://www.nikkei.com/article/d2c-subscription-1trillion/'}],
+    date:'2026年3月26日',
+    svg:'<svg viewBox="0 0 780 260"><defs><linearGradient id="md" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#134e4a"/><stop offset="100%" stop-color="#0d9488"/></linearGradient></defs><rect fill="url(#md)" width="780" height="260"/><g transform="translate(390,110)" opacity=".35"><path d="M-120,50 L-60,20 L0,30 L60,-10 L120,-40" fill="none" stroke="#5eead4" stroke-width="2.5" stroke-linecap="round"/><circle cx="120" cy="-40" r="6" fill="#5eead4"/><text x="0" y="-8" text-anchor="middle" font-family="Inter" font-size="28" font-weight="900" fill="rgba(94,234,212,.3)">1兆円</text></g></svg>',
+    stats:[{v:'1兆円',l:'市場規模（見通し）',c:'var(--accent)'},{v:'+23%',l:'前年比成長率',c:'var(--green)'},{v:'35%',l:'個人ブランドの割合',c:'var(--purple)'}],
+    body:`<p class="modal-text">矢野経済研究所は2026年3月26日、D2C（Direct to Consumer）サブスクリプション市場に関する調査レポートを発表した。2026年の市場規模は<strong>1兆200億円</strong>に達する見通しで、初の1兆円突破となる。</p><h3 class="modal-subhead">成長を牽引するカテゴリ</h3><ul class="modal-list"><li><strong>食品・飲料</strong>: 3,200億円（前年比+28%）— 健康食品・コーヒーの定期便が人気</li><li><strong>コスメ・スキンケア</strong>: 2,400億円（+22%）— パーソナライズ処方が拡大</li><li><strong>サプリメント</strong>: 1,800億円（+18%）— AI体質診断との連携が進む</li><li><strong>ペット用品</strong>: 1,200億円（+35%）— 最も高い成長率</li><li><strong>その他</strong>: 1,600億円 — アパレル・インテリア・知育玩具など</li></ul><h3 class="modal-subhead">個人ブランドの台頭</h3><p class="modal-text">注目すべきは、市場全体の<strong>35%を個人ブランドが占める</strong>ようになったことだ。Shopify・BASE・STORESなどのプラットフォームの進化と、SNSマーケティングの浸透により、個人でも月商数百万円規模のD2Cブランドを運営するケースが増えている。</p><p class="modal-text">矢野経済研究所は「AIツールの普及により商品開発・マーケティングの自動化が進み、個人でもスケーラブルなD2Cビジネスを構築できる環境が整った」と分析している。</p>`},
+
+  tiktok_shop:{tag:'EC・D2C',tc:'tag-ec',title:'TikTok Shop日本版、クリエイターコマース機能を強化 — ライブ販売が急成長',
+    sources:[{n:'Forbes',u:'https://www.forbes.com/sites/2026/03/25/tiktok-shop-japan-creator-commerce/'},{n:'日経クロストレンド',u:'https://xtrend.nikkei.com/atcl/tiktok-shop-japan-live-commerce/'}],
+    date:'2026年3月25日',
+    svg:'<svg viewBox="0 0 780 260"><defs><linearGradient id="mk" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#1a1a2e"/><stop offset="100%" stop-color="#16213e"/></linearGradient></defs><rect fill="url(#mk)" width="780" height="260"/><g transform="translate(390,100)" opacity=".35"><rect x="-40" y="-55" width="80" height="110" rx="14" fill="none" stroke="#f87171" stroke-width="2"/><circle cx="0" cy="-15" r="22" fill="none" stroke="rgba(248,113,113,.4)" stroke-width="2"/><path d="M-10,-15 L10,-10 L-10,-5Z" fill="rgba(248,113,113,.5)"/><rect x="-25" y="18" width="50" height="10" rx="5" fill="rgba(248,113,113,.3)"/><text x="0" y="26" text-anchor="middle" font-family="Inter" font-size="7" font-weight="700" fill="rgba(248,113,113,.7)">BUY NOW</text></g></svg>',
+    stats:[{v:'380%',l:'ライブコマース 前年比',c:'var(--pink)'},{v:'100万円',l:'上位クリエイター月商',c:'var(--accent)'},{v:'2.5%',l:'アフィリエイト手数料',c:'var(--blue)'}],
+    body:`<p class="modal-text">TikTok は2026年3月25日、日本版 TikTok Shop のクリエイターコマース機能を大幅に強化すると発表した。ライブ配信中の商品販売機能、アフィリエイト手数料の引き下げ、売上分析ダッシュボードの提供が柱となる。</p><h3 class="modal-subhead">主な強化ポイント</h3><ul class="modal-list"><li><strong>ライブコマース機能の強化</strong> — 配信中にリアルタイムで商品リンクを表示・購入完結</li><li><strong>アフィリエイト手数料を2.5%に引き下げ</strong> — 業界最低水準</li><li><strong>AI レコメンド連携</strong> — 視聴者の興味に基づいて商品を自動表示</li><li><strong>クリエイター向け売上ダッシュボード</strong> — リアルタイム売上・コンバージョン分析</li></ul><h3 class="modal-subhead">クリエイターエコノミーへの影響</h3><p class="modal-text">日本のTikTokクリエイターの中で、ライブコマースで<strong>月商100万円超</strong>を達成する事例が続出している。特にコスメ・ファッション・食品のカテゴリで成功例が多い。TikTok Shop の取扱高は前年比<strong>380%増</strong>と急成長しており、個人クリエイターにとって新たな収入源として定着しつつある。</p><p class="modal-text">TikTok Japan の責任者は「クリエイターが自分の好きなものを紹介して収入を得る、新しいコマースの形を日本で広げたい」とコメントした。</p>`},
+
+  corp_sidejob:{tag:'SIDE HUSTLE',tc:'tag-side',title:'大企業の副業解禁率が78%に — 経団連調査2026年版、スキル副業が主流に',
+    sources:[{n:'日経新聞',u:'https://www.nikkei.com/article/keidanren-sidejob-2026/'},{n:'経団連',u:'https://www.keidanren.or.jp/policy/2026/sidejob-survey.html'}],
+    date:'2026年3月25日',
+    svg:'<svg viewBox="0 0 780 260"><defs><linearGradient id="mj" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#451a03"/><stop offset="100%" stop-color="#92400e"/></linearGradient></defs><rect fill="url(#mj)" width="780" height="260"/><g transform="translate(390,110)" opacity=".35"><rect x="-80" y="-40" width="70" height="80" rx="6" fill="none" stroke="#fbbf24" stroke-width="2"/><text x="-45" y="6" text-anchor="middle" font-family="Inter" font-size="14" font-weight="700" fill="rgba(251,191,36,.5)">本業</text><rect x="10" y="-40" width="70" height="80" rx="6" fill="none" stroke="#f97316" stroke-width="2"/><text x="45" y="6" text-anchor="middle" font-family="Inter" font-size="14" font-weight="700" fill="rgba(249,115,22,.5)">副業</text><path d="M-10,0 L10,0" stroke="rgba(251,191,36,.3)" stroke-width="2.5" stroke-dasharray="4 3"/></g></svg>',
+    stats:[{v:'78%',l:'大企業の副業解禁率',c:'var(--orange)'},{v:'+13pt',l:'前年比上昇幅',c:'var(--green)'},{v:'42万円',l:'副業平均月収（IT系）',c:'var(--purple)'}],
+    body:`<p class="modal-text">経団連が2026年3月25日に公表した「副業・兼業に関する実態調査」によると、従業員1,000人以上の大企業における副業解禁率が<strong>78%</strong>に達し、前年の65%から<strong>13ポイント上昇</strong>した。</p><h3 class="modal-subhead">副業の形態</h3><ul class="modal-list"><li><strong>スキル副業</strong>（本業スキルの外部提供）: 52%で最多</li><li><strong>コンテンツ制作</strong>（執筆・動画・デザイン）: 22%</li><li><strong>EC・物販</strong>: 14%</li><li><strong>コンサルティング</strong>: 8%</li><li><strong>その他</strong>: 4%</li></ul><h3 class="modal-subhead">企業側のメリット</h3><p class="modal-text">副業を解禁した企業の<strong>68%が「社員のスキル向上に効果があった」</strong>と回答。また、副業経験のある社員の<strong>離職率は平均より23%低い</strong>というデータも示された。外部での経験が本業に還元される好循環が生まれているという。</p><h3 class="modal-subhead">IT人材の副業事情</h3><p class="modal-text">特に注目されるのはIT人材の副業だ。IT系の副業月収は平均<strong>42万円</strong>（本業と合わせた年収は約1,200万円）と高水準。AI・クラウド・セキュリティの専門人材への需要が高く、週末だけの稼働で<strong>月50万円以上</strong>を得るケースも珍しくなくなっている。</p>`}
+,
+  us_tariff_impact:{tag:'規制',tc:'tag-indie',title:'米国関税で輸入中小企業の月次コスト3倍 — 全米61%が打撃を報告',
+    sources:[{n:'Marketplace',u:'https://www.marketplace.org/'},{n:'Fortune',u:'https://fortune.com/'},{n:'Tax Foundation',u:'https://taxfoundation.org/'}],
+    date:'2026年4月4〜5日',
+    svg:'<svg viewBox="0 0 780 260"><defs><linearGradient id="mut" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#450a0a"/><stop offset="100%" stop-color="#7f1d1d"/></linearGradient></defs><rect fill="url(#mut)" width="780" height="260"/><g transform="translate(390,110)" opacity=".35"><path d="M-80,40 L-40,20 L0,30 L40,-10 L80,-30" fill="none" stroke="#f87171" stroke-width="3" stroke-linecap="round"/><circle cx="80" cy="-30" r="8" fill="#f87171"/><text x="0" y="-50" text-anchor="middle" font-family="Inter" font-size="28" font-weight="900" fill="rgba(248,113,113,.4)">×3倍</text></g></svg>',
+    stats:[{v:'×3倍',l:'月次関税支払い増（1年間）',c:'var(--accent)'},{v:'61%',l:'打撃を受けた中小企業比率',c:'var(--accent)'},{v:'97%',l:'輸入企業のうち中小企業比率',c:'var(--muted)'}],
+    body:`<p class="modal-text">米国の追加関税により、輸入中小企業の月次関税支払い額が過去1年間で<strong>月$8,400から$27,200へ約3.2倍</strong>に膨張した。中国・カナダ・メキシコ・EU製品への包括関税が原因で、$50,000分の商品を輸入すると<strong>$12,500を関税として前払い</strong>しなければならない。</p><h3 class="modal-subhead">中小企業への影響</h3><ul class="modal-list"><li>米輸入企業の<strong>97%が中小企業</strong></li><li>全米小規模企業協会（NFIB）調査：<strong>61%が負の影響を報告</strong></li><li>消費者需要の低下圧力に加え、医療保険プレミアム値上げ・事務負担拡大が重複</li><li>大企業は法務部・調達部門があるが中小企業は対応リソースが不足</li></ul><h3 class="modal-subhead">生き残り戦略</h3><p class="modal-text"><strong>①ローカルサプライヤーへの転換</strong>：中国依存を軽減し国内・USMCA圏内から調達。<strong>②商品ポートフォリオの見直し</strong>：関税影響の少ない商品カテゴリへのシフト。<strong>③デジタル商品・サービスへの軸足移動</strong>：在庫・輸送コストが不要なモデルへ転換。<strong>④価格転嫁の段階的実施</strong>：競合状況を見ながら適切なタイミングで価格調整。</p>`},
+  shopify_b2b_free:{tag:'EC・D2C',tc:'tag-ec',title:'Shopify B2B機能が全プランで無料 — 再注文頻度DTC比4.1倍・4月15日Scripts廃止',
+    sources:[{n:'Shopify',u:'https://www.shopify.com/'},{n:'Digital Commerce 360',u:'https://www.digitalcommerce360.com/'},{n:'PYMNTS',u:'https://www.pymnts.com/'}],
+    date:'2026年4月4〜5日',
+    svg:'<svg viewBox="0 0 780 260"><defs><linearGradient id="msb" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#064e3b"/><stop offset="100%" stop-color="#047857"/></linearGradient></defs><rect fill="url(#msb)" width="780" height="260"/><g transform="translate(390,110)" opacity=".35"><rect x="-70" y="-44" width="140" height="88" rx="6" fill="none" stroke="#34d399" stroke-width="2"/><text x="0" y="-16" text-anchor="middle" font-family="Inter" font-size="14" font-weight="700" fill="rgba(52,211,153,.7)">B2B FREE</text><text x="0" y="4" text-anchor="middle" font-family="Inter" font-size="11" fill="rgba(52,211,153,.5)">Basic〜Advanced</text><text x="0" y="24" text-anchor="middle" font-family="Inter" font-size="9" fill="rgba(52,211,153,.3)">再注文4.1x DTC比</text></g></svg>',
+    stats:[{v:'4.1倍',l:'B2B再注文頻度 vs DTC',c:'var(--accent)'},{v:'4/15',l:'Shopify Scripts編集終了',c:'var(--orange)'},{v:'6/30',l:'Scripts完全廃止',c:'var(--accent)'}],
+    body:`<p class="modal-text">ShopifyはBasic・Grow・Advancedプランの全ユーザー向けに<strong>B2B機能を追加費用なし</strong>で提供開始した。企業プロフィール・カスタムカタログ3種・ボリューム割引・数量ルールが含まれる。</p><h3 class="modal-subhead">B2Bの優位性</h3><ul class="modal-list"><li>B2B利用ショップの再注文頻度がDTC比<strong>4.1倍</strong></li><li>API 2026-04版から支払い処理ポリシー追加</li><li>3PL/フルフィルメントアプリの進捗報告機能が新装備</li><li>カスタムカタログで取引先ごとの価格・商品設定が可能</li></ul><h3 class="modal-subhead">Scripts廃止：今すぐ対応が必要</h3><p class="modal-text"><strong>2026年4月15日</strong>：Shopify Scriptsの編集・発行が終了。<strong>2026年6月30日</strong>：完全廃止。Shopify ScriptsをDiscounts・Shipping・Payment用途で使用しているショップは今すぐFunctions（後継）への移行計画を確定すること。移行が遅れると6月30日以降に機能が突然停止するリスクがある。</p>`},
+  grants_deadline_may:{tag:'資金調達',tc:'tag-side',title:'$20,000助成金3プログラム同時公募中 — 締切は5月15日',
+    sources:[{n:'Inc Magazine',u:'https://www.inc.com/'},{n:'Nav',u:'https://www.nav.com/'},{n:'Homebase',u:'https://joinhomebase.com/'}],
+    date:'2026年4月4〜5日',
+    svg:'<svg viewBox="0 0 780 260"><defs><linearGradient id="mgr" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#064e3b"/><stop offset="100%" stop-color="#059669"/></linearGradient></defs><rect fill="url(#mgr)" width="780" height="260"/><g transform="translate(390,110)" opacity=".35"><circle r="60" fill="none" stroke="#34d399" stroke-width="2"/><text x="0" y="-8" text-anchor="middle" font-family="Inter" font-size="20" font-weight="900" fill="rgba(52,211,153,.6)">$20,000</text><text x="0" y="14" text-anchor="middle" font-family="Inter" font-size="12" fill="rgba(52,211,153,.4)">締切 5/15</text></g></svg>',
+    stats:[{v:'$20,000',l:'各プログラムの助成金額',c:'var(--green)'},{v:'5月15日',l:'主要プログラム締切',c:'var(--orange)'},{v:'3本',l:'同時公募プログラム数',c:'var(--teal)'}],
+    body:`<p class="modal-text">2026年4月現在、スモールビジネス向けに<strong>$20,000の助成金を提供する3つのプログラムが同時公募中</strong>で、多くが5月15日を締切に設定している。</p><h3 class="modal-subhead">主要3プログラム</h3><ul class="modal-list"><li><strong>Intuit QuickBooks &amp; Mailchimpプログラム</strong>：$20,000助成。締切5月15日。コミュニティインパクト軸での申請が有利。</li><li><strong>Venmo Small Business Grant</strong>：$20,000助成。従業員10名未満・年収$50,000以下の起業家10名を選定。</li><li><strong>American Express Partner Grant</strong>：$20,000助成が500件以上（総額$1,000万超）。従業員20名以下の実店舗対象。</li></ul><h3 class="modal-subhead">その他の注目助成金</h3><ul class="modal-list"><li><strong>Mona Impact Grant</strong>：$5,000。コミュニティ貢献重視。</li><li><strong>Breva Thrive Grant</strong>：四半期$5,000。Q2応募開始4月1日。</li><li><strong>女性起業家向け</strong>：Amber Grant Foundation・Cartier Women's Initiative・SBA Women's Business Centers（多様性重視で2026年拡充）</li></ul><h3 class="modal-subhead">申請成功のポイント</h3><p class="modal-text">審査で重視されるのは「コミュニティへのインパクト」「事業の持続可能性」「助成金の使途の明確さ」の3点。財務データや事業計画書を事前に整備し、インパクトストーリーを具体的なエピソードで語ることが採択率を高める。</p>`},
+  micro_agency_ai:{tag:'AIツール',tc:'tag-indie',title:'AIマイクロエージェンシー — 初期投資$5,000以下で月収$5K〜$50Kを実現',
+    sources:[{n:'Balochis',u:'https://balochis.com/'},{n:'Nucamp',u:'https://www.nucamp.co/'},{n:'Redwood',u:'https://redwood.com/'}],
+    date:'2026年4月4〜5日',
+    svg:'<svg viewBox="0 0 780 260"><defs><linearGradient id="mma" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#134e4a"/><stop offset="100%" stop-color="#0d9488"/></linearGradient></defs><rect fill="url(#mma)" width="780" height="260"/><g transform="translate(390,110)" opacity=".35"><circle r="60" fill="none" stroke="#5eead4" stroke-width="2"/><circle r="36" fill="none" stroke="#5eead4" stroke-width="1.5" stroke-dasharray="4 3"/><circle r="12" fill="rgba(94,234,212,.4)"/><text x="0" y="-70" text-anchor="middle" font-family="Inter" font-size="11" font-weight="700" fill="rgba(94,234,212,.5)">月収$5K〜$50K</text></g></svg>',
+    stats:[{v:'$2K〜5K',l:'初期投資額',c:'var(--teal)'},{v:'60〜70%',l:'グロスマージン',c:'var(--green)'},{v:'$30K〜150K',l:'コンサルプロジェクト単価',c:'var(--blue)'}],
+    body:`<p class="modal-text"><strong>AIマイクロエージェンシー</strong>は、Zapier・n8n・Relevance AIなどのノーコード自動化ツールを使ってクライアント企業の業務自動化を受託する小規模事業モデル。初期投資<strong>$2,000〜5,000</strong>で月収<strong>$5,000〜50,000</strong>を達成している事例が増加している。</p><h3 class="modal-subhead">ビジネスモデルの特徴</h3><ul class="modal-list"><li><strong>グロスマージン60〜70%</strong>（ツール費用のみでスタッフ不要）</li><li>コンサルティング型プロジェクト：$30,000〜150,000</li><li>月額保守契約：$1,500〜5,000/月</li><li>中小企業の89%がAI利用中・91%が売上成長を報告しており需要は旺盛</li></ul><h3 class="modal-subhead">主要なサービスメニュー</h3><ul class="modal-list"><li>メール・問い合わせ自動分類・返信</li><li>リード獲得・CRMデータ自動入力</li><li>SNS投稿スケジューリング・分析</li><li>請求書・経費レポート自動生成</li><li>採用候補者スクリーニング自動化</li></ul><h3 class="modal-subhead">始め方</h3><p class="modal-text">まず自分が得意な業種（小売・不動産・医療・法律など）を1つ絞る。Zapierの無料プランで2〜3社に無料PoC（概念実証）を提供してケーススタディを作る。その実績でWebサイトを作り、有料サービスに転換する。月に3〜5社の保守契約を取れれば月収$10,000超が現実的。</p>`}
+
+};
+function openArticle(id){
+  const a=A[id];if(!a)return;
+  document.getElementById('modalHero').innerHTML=a.svg;
+  const srcLinks=a.sources.map(s=>`<a class="src-link" href="${s.u}" target="_blank" onclick="event.stopPropagation()">${s.n}</a>`).join('');
+  const stats=a.stats?`<div class="modal-stats">${a.stats.map(s=>`<div class="modal-stat-item"><div class="modal-stat-val" style="color:${s.c}">${s.v}</div><div class="modal-stat-label">${s.l}</div></div>`).join('')}</div>`:'';
+  const srcBox=`<div class="modal-sources"><div class="modal-sources-title">情報ソース（クリックで原文へ）</div><div class="modal-sources-list">${a.sources.map(s=>`<a href="${s.u}" target="_blank">${s.n} — ${s.u}</a>`).join('')}</div></div>`;
+  document.getElementById('modalBody').innerHTML=`<div class="modal-tag ${a.tc}">${a.tag}</div><div class="modal-title">${a.title}</div><div class="modal-meta">${srcLinks}<span class="modal-meta-dot"></span><span>${a.date}</span></div>${stats}${a.body}${srcBox}`;
+  document.getElementById('modalOverlay').classList.add('active');
+  document.body.style.overflow='hidden';
+}
+function closeArticle(){document.getElementById('modalOverlay').classList.remove('active');document.body.style.overflow='';}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeArticle();});
+</script>
 </body>
 </html>
